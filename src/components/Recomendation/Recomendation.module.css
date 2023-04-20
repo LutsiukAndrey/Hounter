@@ -1,0 +1,210 @@
+@media (max-width: 767px) {
+  .recommendation {
+    padding-top: 60px;
+  }
+}
+.recommendation__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media ((min-width: 1200px)) {
+  .recommendation__flex {
+    align-items: center;
+  }
+}
+@media ((min-width: 768px) and (max-width: 1199px)) {
+  .recommendation__flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .recommendation__flex {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+.recommendation__text {
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
+}
+.recommendation__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: #1b1c57;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-100%);
+}
+
+.recommendationList {
+  display: flex;
+  justify-content: space-around;
+}
+@media ((min-width: 768px) and (max-width: 1199px)) {
+  .recommendationList {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+}
+@media (max-width: 767px) {
+  .recommendationList {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+.recommendationBtnsList {
+  display: flex;
+  align-items: center;
+  margin-right: 136px;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(-100%);
+}
+@media ((min-width: 768px) and (max-width: 1199px)) {
+  .recommendationBtnsList {
+    margin-right: 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .recommendationBtnsList {
+    margin-right: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.recommendationBtnsList__item:not(:last-child) {
+  margin-right: 56px;
+}
+@media (max-width: 767px) {
+  .recommendationBtnsList__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.labelRadiobtn__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.labelRadiobtn__span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+  border: 1px solid #e0e3eb;
+  border-radius: 32px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms linear, color 250ms linear, background-color 250ms linear;
+}
+.labelRadiobtn__span:hover, .labelRadiobtn__span:focus {
+  transform: scale(1.05);
+}
+.labelRadiobtn__span:hover .recommendationList__svg, .labelRadiobtn__span:focus .recommendationList__svg {
+  fill: #047857;
+}
+.labelRadiobtn .labelRadiobtn__input:checked ~ .labelRadiobtn__span {
+  color: #047857;
+  background-color: #d1fae5;
+}
+.labelRadiobtn .labelRadiobtn__input:checked ~ .labelRadiobtn__span .labelRadiobtn__svg {
+  fill: #047857;
+}
+.labelRadiobtn__svg {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.recommendationForm {
+  display: flex;
+}
+@media ((min-width: 768px) and (max-width: 1199px)) {
+  .recommendationForm {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .recommendationForm {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.recommendationListBtn {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  opacity: 0;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(100%);
+}
+@media ((min-width: 768px) and (max-width: 1199px)) {
+  .recommendationListBtn {
+    margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .recommendationListBtn {
+    margin-right: auto;
+  }
+}
+.recommendationListBtn__item:not(:last-child) {
+  margin-right: 16px;
+}
+.recommendationListBtn__btn {
+  border-radius: 32px;
+  border: transparent;
+  padding: 12px 16px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: background-color 300ms linear, transform 300ms linear;
+  background-color: #e0e3eb;
+}
+.recommendationListBtn__btn:hover, .recommendationListBtn__btn:focus {
+  transform: scale(1.1);
+  background-color: #10b981;
+}
+.recommendationListBtn__btn:hover .recommendationListBtn__svg, .recommendationListBtn__btn:focus .recommendationListBtn__svg {
+  fill: #f0f3fd;
+}
+.recommendationListBtn__svg {
+  width: 28px;
+  height: 28px;
+  fill: #3c4563;
+}
+
+.animation_top,
+.animation_left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(0);
+}
+
+.animation-left {
+  transform: translateX(0);
+}/*# sourceMappingURL=Recomendation.module.css.map */

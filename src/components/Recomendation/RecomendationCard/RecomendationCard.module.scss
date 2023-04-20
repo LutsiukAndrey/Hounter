@@ -1,0 +1,168 @@
+@import '../../../scss/variables';
+
+.recommendationItem {
+  &__item {
+    min-width: 340px;
+    transform: scale(1);
+    transition: transform 300ms linear;
+    &:not(:last-child) {
+      @media ($desktop) {
+        margin-right: 40px;
+      }
+    }
+
+    opacity: 0;
+    transition: transform 300ms linear, opacity 300ms linear;
+    transform: translateX(-100%);
+
+    &:nth-child(2) {
+      transition-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.4s;
+    }
+    &:nth-child(4) {
+      transition-delay: 0.6s;
+    }
+
+    @media ($tablet) {
+      width: calc((100% - 30px - 30px) / 2);
+      margin: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+
+    //
+  }
+
+  &__img {
+    width: 349px;
+  }
+  &__content {
+    position: relative;
+    max-width: 349px;
+  }
+
+  &__firstContent {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media ($mobile) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.33;
+
+    color: #0e1735;
+  }
+
+  &__price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+
+    color: #3c4563;
+  }
+
+  &__secondContent {
+    display: flex;
+    align-items: center;
+
+    @media ($mobile) {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__underImg {
+    width: 40px;
+    margin-right: 16px;
+  }
+
+  &__underTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.33;
+
+    color: #0e1735;
+  }
+
+  &__underText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.57;
+
+    color: $gray-text;
+  }
+}
+
+.recommendationItem_position {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  padding: 8px 16px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+
+  &_one {
+    background-color: $red-light;
+  }
+
+  &_two {
+    background-color: $blue-light;
+  }
+
+  &_three {
+    background-color: $accent-light;
+  }
+  &_four {
+    background-color: $red-light;
+  }
+
+  &__svg {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+
+    &_red {
+      color: $red-text;
+    }
+
+    &_blue {
+      color: $blue-text;
+    }
+
+    &_green {
+      color: $accent;
+    }
+  }
+}
+.animation_top,
+.animation_left {
+  opacity: 1;
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateY(0);
+}
+
+.animation-left {
+  transform: translateX(0);
+}
