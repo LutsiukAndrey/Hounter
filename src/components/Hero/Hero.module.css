@@ -16,9 +16,6 @@
   margin-right: 104px;
   display: inline-block;
   z-index: 3;
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(-100%);
 }
 @media ((min-width: 768px) and (max-width: 1199px)) {
   .heroLeftblock {
@@ -56,7 +53,7 @@
   opacity: 0.75;
   margin-bottom: 32px;
 }
-.heroLeftblock__under-text {
+.heroLeftblock__underText {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -78,10 +75,14 @@
     width: 425px;
   }
 }
-.hero_form__img_search {
+.hero_form__geo_search {
   width: 24px;
   height: 24px;
   margin-left: 24px;
+  color: #f59e0b;
+}
+.hero_form__geo_search:hover, .hero_form__geo_search:focus {
+  transform: scale(1.1);
 }
 .hero_form__input {
   padding: 16px 17px;
@@ -125,11 +126,6 @@
 .hero_form__btn:hover, .hero_form__btn:focus {
   transform: scale(1.1);
 }
-.hero_form__svg {
-  fill: currentColor;
-  width: 24px;
-  height: 24px;
-}
 
 .hero_partner {
   display: flex;
@@ -156,9 +152,6 @@
   position: absolute;
   top: 0;
   left: 548px;
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(100%);
 }
 @media ((min-width: 1200px)) {
   .hero_rightblock {
@@ -195,11 +188,15 @@
 }
 
 .rightblock_list {
-  position: absolute;
-  bottom: 34px;
+  position: relative;
+  bottom: 150px;
   left: 48px;
   display: flex;
   align-items: center;
+}
+.rightblock_list:hover, .rightblock_list:focus {
+  transition: transform 500ms linear, opacity 500ms linear;
+  transform: translateX(-210px);
 }
 @media ((min-width: 768px) and (max-width: 1199px)) {
   .rightblock_list {
@@ -252,10 +249,4 @@
 }
 .rightblock_img__img {
   width: 56px;
-}
-
-.animationLeft {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
 }/*# sourceMappingURL=Hero.module.css.map */

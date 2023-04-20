@@ -1,7 +1,11 @@
 import s from './RecomendationCard.module.scss';
 import house from '../../../img/recommen-house4.jpg';
 import classNames from 'classnames';
-import portret from '../../../img/partner-ellipse3.png';
+import portret from '../../../img/portret1.png';
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+
+import HomeIcon from '@mui/icons-material/Home';
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 
 export const RecomendationCard = () => {
   return (
@@ -9,22 +13,11 @@ export const RecomendationCard = () => {
       <div className={s.recommendationItem__content}>
         <img src={house} className={s.recommendationItem__img} alt="img" />
         <div
-          className={classNames(
-            s.recommendationItem_position,
-            s.recommendationItem_position_four
-          )}
+          style={{ color: '#EF4444', backgroundColor: '#FEE2E2' }}
+          className={classNames(s.recommendationItem_position)}
         >
-          {/* <svg className={s.recommendationItem_position__svg}>
-            <use href="./img/sprite/sprite.svg#icon-recommendation-fire"></use>
-          </svg> */}
-          <p
-            className={classNames(
-              s.recommendationItem_position__text,
-              s.recommendationItem_position__text_red
-            )}
-          >
-            Popular
-          </p>
+          <LocalFireDepartmentIcon />
+          <p>Popular</p>
         </div>
       </div>
       <div className={s.recommendationItem__firstContent}>
@@ -34,7 +27,7 @@ export const RecomendationCard = () => {
       <div className={s.recommendationItem__secondContent}>
         <img
           src={portret}
-          className={s.recommendationItem__under_img}
+          className={s.recommendationItem__underImg}
           alt="img"
         />
         <div>

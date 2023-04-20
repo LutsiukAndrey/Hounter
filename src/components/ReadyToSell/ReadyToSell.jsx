@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import s from './ReadyToSell.module.scss';
-import face from '../../img/recommen-portret1.png';
+import face from '../../img/portret1.png';
 import room from '../../img/sell-rightblock4.jpg';
 import main from '../../img/sell-rightblock3.jpg';
 import vase from '../../img/sell-rightblock2.jpg';
@@ -8,16 +8,18 @@ import sofa from '../../img/sell-rightblock1.jpg';
 import orange from '../../img/sell-orange.png';
 import { Container } from 'components/Container/Container';
 import yellow from '../../img/sell-yellow.png';
-
+import PhoneIcon from '@mui/icons-material/Phone';
+import GarageIcon from '@mui/icons-material/Garage';
+import BedIcon from '@mui/icons-material/Bed';
+import BathtubIcon from '@mui/icons-material/Bathtub';
+import StairsIcon from '@mui/icons-material/Stairs';
 export const ReadyToSell = () => {
   return (
     <section className={s.sell}>
       <Container>
         <div className={s.sell__position}>
           <div className={classNames(s.sellLeftblock, s.animationLeft)}>
-            <p className={classNames(s.goldText, s.goldText_margin)}>
-              Ready to Sell!
-            </p>
+            <p className={s.sell__gold}>Ready to Sell!</p>
             <h2 className={s.sellLeftblock__title}>
               Let’s tour and see our house!
             </h2>
@@ -29,43 +31,38 @@ export const ReadyToSell = () => {
 
             <ul className={s.sellLeftblockList}>
               <li className={s.sellLeftblockList__item}>
-                <svg
+                <BedIcon
                   className={s.sellLeftblockList__svg}
                   width="32"
                   height="32"
-                >
-                  <use href="./img/sprite/sprite.svg#icon-sell-bed"></use>
-                </svg>
+                />
+
                 <p className={s.sellLeftblockList__text}>4 Bedrooms</p>
               </li>
               <li className={s.sellLeftblockList__item}>
-                <svg
+                <BathtubIcon
                   className={s.sellLeftblockList__svg}
                   width="32"
                   height="32"
-                >
-                  <use href="./img/sprite/sprite.svg#icon-sell-bath"></use>
-                </svg>
+                />
+
                 <p className={s.sellLeftblockList__text}>2 Bathrooms</p>
               </li>
               <li className={s.sellLeftblockList__item}>
-                <svg
+                <GarageIcon
                   className={s.sellLeftblockList__svg}
                   width="32"
                   height="32"
-                >
-                  <use href="./img/sprite/sprite.svg#icon-sell-car"></use>
-                </svg>
+                />
                 <p className={s.sellLeftblockList__text}>1 Carport</p>
               </li>
               <li className={s.sellLeftblockList__item}>
-                <svg
+                <StairsIcon
                   className={s.sellLeftblockList__svg}
                   width="32"
                   height="32"
-                >
-                  <use href="./img/sprite/sprite.svg#icon-sell-stairs"></use>
-                </svg>
+                />
+
                 <p className={s.sellLeftblockList__text}>2 Floors</p>
               </li>
             </ul>
@@ -85,13 +82,11 @@ export const ReadyToSell = () => {
                 </div>
               </div>
               <button className={s.sellLeftblockDown__btn} type="button">
-                <svg
+                <PhoneIcon
                   width="24"
                   height="24"
                   className={s.sellLeftblockDown__svg}
-                >
-                  <use href="./img/sprite/sprite.svg#icon-sell-call"></use>
-                </svg>
+                />
                 Contact Now
               </button>
             </div>

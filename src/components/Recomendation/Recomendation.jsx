@@ -1,111 +1,79 @@
-import classNames from 'classnames';
+import { useRef } from 'react';
+
+import Slider from 'react-slick';
+
 import s from './Recomendation.module.scss';
-import firstRecomendation from '../../img/sprite/sprite.svg#icon-recommendation1';
-import leftArrow from '../../img/sprite/sprite.svg#icon-arrow-left';
+
+import { sliderSettings } from 'helers';
+
 import { RecomendationCard } from './RecomendationCard/RecomendationCard';
 import { Container } from 'components/Container/Container';
+import { RecomendationFilter } from './RecomendationFilter/RecomendationFilter';
+
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 export const Recomendation = () => {
+  let slider = useRef(null);
+
+  console.log(slider);
+
+  const next = () => {
+    slider.slickNext();
+  };
+
+  const previous = () => {
+    slider.slickPrev();
+  };
+
   return (
     <section className={s.recommendation}>
       <Container>
-        <p
-          className={classNames(
-            s.recommendation__text,
-            s.goldText,
-            s.animation_top
-          )}
-        >
-          Our Recommendation
-        </p>
+        <p className={s.recommendation__text}>Our Recommendation</p>
 
         <div className={s.recommendation__flex}>
-          <h2 className={classNames(s.recommendation__title, s.animation_left)}>
-            Featured House
-          </h2>
+          <h2 className={s.recommendation__title}>Featured House</h2>
 
-          <form className={s.recommendationForm}>
-            <ul
-              className={classNames(s.recommendationBtnsList, s.animation_top)}
-            >
-              <li className={s.recommendationBtnsList__item}>
-                <label className={s.labelRadiobtn} for="radio1">
-                  <input
-                    className={s.labelRadiobtn__input}
-                    type="radio"
-                    name="radiotn"
-                    id="radio1"
-                  />
-                  <span className={s.labelRadiobtn__span}>
-                    <svg className={s.labelRadiobtn__svg}>
-                      <use href={firstRecomendation}></use>
-                    </svg>
-                    House
-                  </span>
-                </label>
-              </li>
-
-              <li className={s.recommendationBtnsList__item}>
-                <label className={s.labelRadiobtn} for="radio2">
-                  <input
-                    className={s.labelRadiobtn__input}
-                    type="radio"
-                    name="radioBtn"
-                    id="radio2"
-                  />
-                  <span className={s.labelRadiobtn__span}>
-                    <svg className={s.labelRadiobtn__svg}>
-                      <use href="./img/sprite/sprite.svg#icon-recommendation2"></use>
-                    </svg>
-                    Villa
-                  </span>
-                </label>
-              </li>
-              <li className={s.recommendationBtnsList__item}>
-                <label className={s.labelRadiobtn} for="radio3">
-                  <input
-                    className={s.labelRadiobtn__input}
-                    type="radio"
-                    name="radioBtn"
-                    id="radio3"
-                  />
-                  <span className={s.labelRadiobtn__span}>
-                    <svg className={s.labelRadiobtn__svg}>
-                      <use href="./img/sprite/sprite.svg#icon-recommendation3"></use>
-                    </svg>
-                    Apartment
-                  </span>
-                </label>
-              </li>
-            </ul>
-
-            <ul
-              className={classNames(s.recommendationListBtn, s.animation_left)}
-              // data-animation="left"
-            >
+          <div className={s.recommendationBtns}>
+            <RecomendationFilter />
+            <ul className={s.recommendationListBtn}>
               <li className={s.recommendationListBtn__item}>
-                <button className={s.recommendationListBtn__btn} type="button">
-                  <svg className={s.recommendationListBtn__svg}>
-                    <use href={leftArrow}></use>
-                  </svg>
+                <button
+                  className={s.recommendationListBtn__btn}
+                  onClick={previous}
+                >
+                  <ArrowBackIosIcon className={s.recommendationListBtn__svg} />
                 </button>
               </li>
               <li className={s.recommendationListBtn__item}>
-                <button className={s.recommendationListBtn__btn} type="button">
-                  <svg className={s.recommendationListBtn__svg}>
-                    <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
-                  </svg>
+                <button
+                  className={s.recommendationListBtn__btn}
+                  type="button"
+                  onClick={next}
+                >
+                  <ArrowForwardIosIcon
+                    className={s.recommendationListBtn__svg}
+                  />
                 </button>
               </li>
             </ul>
-          </form>
+          </div>
         </div>
-
-        <ul className={s.recommendationList}>
-          <RecomendationCard />
-          <RecomendationCard />
-          <RecomendationCard />
-        </ul>
+        <div style={{ overflow: 'hidden' }}>
+          {/* <ul className={s.recommendationList}> */}
+          <Slider
+            ref={c => (slider = c)}
+            {...sliderSettings}
+            className={s.recommendationList}
+          >
+            <RecomendationCard />
+            <RecomendationCard />
+            <RecomendationCard />
+            <RecomendationCard />
+            <RecomendationCard />
+          </Slider>
+          {/* </ul> */}
+        </div>
       </Container>
     </section>
   );

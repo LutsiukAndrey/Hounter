@@ -4,7 +4,6 @@ import { HandySvg } from 'handy-svg';
 import logo from '../../img/logo.svg';
 import backgroundBlue from '../../img/hero-blue.png';
 import backgroundGreen from '../../img/hero-green.png';
-import listSvg from '../../img/sprite/sprite.svg#icon-arrow-down';
 import { Container } from 'components/Container/Container';
 
 export const Header = () => {
@@ -34,13 +33,13 @@ export const Header = () => {
             <div className={s.menu_box} data-menu>
               <ul className={s.header_list}>
                 <li className={s.header_list__item}>
-                  <a className={s.header_list__link} href="#">
+                  <a className={s.header_list__link} href="#aboutUs">
                     About Us
                   </a>
                 </li>
                 <li className={s.header_list__item}>
-                  <a className={s.header_list__link} href="#">
-                    Article
+                  <a className={s.header_list__link} href="#subscribe">
+                    Subscribe
                   </a>
                 </li>
                 <li
@@ -48,10 +47,7 @@ export const Header = () => {
                 >
                   <a className={s.header_list__link} href="#">
                     Property
-                    {/* <HandySvg href={listSvg} className={s.header_list__svg} /> */}
-                    <svg className={s.header_list__svg}>
-                      <use href={listSvg}></use>
-                    </svg>
+                    <svg className={s.header_list__svg}></svg>
                   </a>
                   <ul className={s.header_menu}>
                     <li className={s.header_menu__item}>

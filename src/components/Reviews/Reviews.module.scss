@@ -1,0 +1,89 @@
+@import '../../scss/variables';
+
+.review {
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  &__gold {
+    color: $gold-text;
+    margin-bottom: 12px;
+  }
+  @media ($mobile) {
+    padding-bottom: 180px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::before {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+
+    color: $secondary-text;
+
+    @media ($mobile) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__span {
+    position: absolute;
+    bottom: -64px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    background-color: #3c4563;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+
+      transform: translate(-16px);
+
+      background-color: #e0e3eb;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      transform: translate(16px);
+
+      background-color: #e0e3eb;
+    }
+  }
+}
+.reviewList {
+  display: flex;
+  justify-content: center;
+
+  @media ($tablet) {
+    flex-direction: column;
+    gap: 140px;
+  }
+
+  @media ($mobile) {
+    flex-direction: column;
+    gap: 80px;
+  }
+}

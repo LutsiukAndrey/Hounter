@@ -1,20 +1,22 @@
 import s from './Hero.module.scss';
 import classNames from 'classnames';
-import { HandySvg } from 'handy-svg';
-import geo from '../../img/search.svg';
-import arrowRight from '../../img/sprite/sprite.svg#icon-arrow-right';
+import PlaceIcon from '@mui/icons-material/Place';
 import treveloca from '../../img/partner1.svg';
 import tiket from '../../img/partner2.svg';
 import airbnb from '../../img/partner3.svg';
 import tripAbvisor from '../../img/partner4.svg';
 import heroImg from '../../img/hero.png';
-import heroLine from '../../img/hero-line.png';
-import firstPortret from '../../img/recommen-portret1.png';
-import secondPortret from '../../img/recommen-portret2.png';
-import thirdPortret from '../../img/recommen-portret3.png';
-import forthPortret from '../../img/recommen-portret4.png';
-import house from '../../img/hero-ellipse4.png';
+import heroLine from '../../img/lines.png';
+import firstPortret from '../../img/portret1.png';
+import secondPortret from '../../img/portret2.png';
+import thirdPortret from '../../img/portret3.png';
+import forthPortret from '../../img/portret4.png';
+import house from '../../img/heroHouse.png';
 import { Container } from 'components/Container/Container';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export const Hero = () => {
   return (
@@ -22,10 +24,10 @@ export const Hero = () => {
       <section className={s.hero}>
         <Container>
           <div className={s.hero__position}>
-            <div className={classNames(s.heroLeftblock, s.animationLeft)}>
+            <div className={classNames(s.heroLeftblock)}>
               <h1 className={s.heroLeftblock__title}>
                 find the place to live
-                <span className={s.heroLeftblock__span}>your dreams</span>{' '}
+                <span className={s.heroLeftblock__span}> Your dreams</span>{' '}
                 easily here
               </h1>
               <p className={s.heroLeftblock__text}>
@@ -33,11 +35,8 @@ export const Hero = () => {
                 here, where it will be easier for you
               </p>
               <form className={s.hero_form}>
-                <img
-                  src={geo}
-                  className={s.hero_form__img_search}
-                  alt="search"
-                />
+                <PlaceIcon className={s.hero_form__geo_search} />
+
                 <input
                   className={s.hero_form__input}
                   type="text"
@@ -47,10 +46,7 @@ export const Hero = () => {
 
                 <button className={s.hero_form__btn}>
                   Search
-                  <svg className={s.hero_form__svg}>
-                    {/* dont work arrow */}
-                    <use href={arrowRight}></use>
-                  </svg>
+                  <ArrowForwardIosIcon />
                 </button>
               </form>
 
@@ -58,7 +54,12 @@ export const Hero = () => {
 
               <ul className={s.hero_partner}>
                 <li className={s.hero_partner__item}>
-                  <a href="#" className={s.hero_partner__link}>
+                  <a
+                    href="https://www.traveloka.com/en-en/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={s.hero_partner__link}
+                  >
                     <img
                       src={treveloca}
                       className={s.hero_partner__img}
@@ -67,7 +68,12 @@ export const Hero = () => {
                   </a>
                 </li>
                 <li className={s.hero_partner__item}>
-                  <a href="#" className={s.hero_partner__link}>
+                  <a
+                    href="https://tickets.ua/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={s.hero_partner__link}
+                  >
                     <img
                       src={tiket}
                       className={s.hero_partner__img}
@@ -76,7 +82,12 @@ export const Hero = () => {
                   </a>
                 </li>
                 <li className={s.hero_partner__item}>
-                  <a href="#" className={s.hero_partner__link}>
+                  <a
+                    href="https://www.airbnb.com.ua/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={s.hero_partner__link}
+                  >
                     <img
                       src={airbnb}
                       className={s.hero_partner__img}
@@ -85,7 +96,12 @@ export const Hero = () => {
                   </a>
                 </li>
                 <li className={s.hero_partner__item}>
-                  <a href="#" className={s.hero_partner__link}>
+                  <a
+                    href="https://www.tripadvisorsupport.com/en-US/hc/traveler"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={s.hero_partner__link}
+                  >
                     <img
                       src={tripAbvisor}
                       className={s.hero_partner__img}
@@ -96,10 +112,7 @@ export const Hero = () => {
               </ul>
             </div>
 
-            <div
-              className={classNames(s.hero_rightblock, s.animationLeft)}
-              //   data-animation="left"
-            >
+            <div className={classNames(s.hero_rightblock)}>
               <img
                 src={heroImg}
                 className={s.hero_rightblock__img}
@@ -110,6 +123,7 @@ export const Hero = () => {
                 className={s.hero_rightblock__img_line}
                 alt="lines"
               />
+
               <ul className={s.rightblock_list}>
                 <li className={s.rightblock_list__item}>
                   <div className={s.rightblock_list__flex}>

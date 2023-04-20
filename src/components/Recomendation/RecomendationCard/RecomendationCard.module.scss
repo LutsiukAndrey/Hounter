@@ -3,8 +3,6 @@
 .recommendationItem {
   &__item {
     min-width: 340px;
-    transform: scale(1);
-    transition: transform 300ms linear;
     &:not(:last-child) {
       @media ($desktop) {
         margin-right: 40px;
@@ -32,7 +30,7 @@
 
     &:hover,
     &:focus {
-      transform: scale(1.05);
+      // transform: scale(1.05);
     }
 
     //
@@ -40,6 +38,7 @@
 
   &__img {
     width: 349px;
+    border-radius: 25px;
   }
   &__content {
     position: relative;
@@ -116,44 +115,11 @@
   display: flex;
   align-items: center;
 
-  &_one {
-    background-color: $red-light;
-  }
-
-  &_two {
-    background-color: $blue-light;
-  }
-
-  &_three {
-    background-color: $accent-light;
-  }
-  &_four {
-    background-color: $red-light;
-  }
-
-  &__svg {
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
-  }
-
   &__text {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
-
-    &_red {
-      color: $red-text;
-    }
-
-    &_blue {
-      color: $blue-text;
-    }
-
-    &_green {
-      color: $accent;
-    }
   }
 }
 .animation_top,

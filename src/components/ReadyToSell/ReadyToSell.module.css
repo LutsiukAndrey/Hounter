@@ -9,6 +9,10 @@
     padding-top: 120px;
   }
 }
+.sell__gold {
+  color: #f59e0b;
+  margin-bottom: 12px;
+}
 .sell__position {
   position: relative;
   display: flex;
@@ -99,7 +103,7 @@
     width: 240px;
   }
 }
-.sellLeftblock__detail-text {
+.sellLeftblock__detailText {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -136,6 +140,7 @@
 }
 .sellLeftblockList__svg {
   margin-right: 16px;
+  color: #888b97;
 }
 
 .sellLeftblockDown {
