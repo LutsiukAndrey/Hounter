@@ -1,3 +1,17 @@
+.slider {
+  width: 1440px;
+}
+@media (max-width: 767px) {
+  .slider {
+    max-width: 500px;
+  }
+}
+@media ((min-width: 768px) and (max-width: 1199px)) {
+  .slider {
+    width: 768px;
+  }
+}
+
 .review {
   padding-bottom: 100px;
   position: relative;
@@ -68,16 +82,4 @@
 .reviewList {
   display: flex;
   justify-content: center;
-}
-@media ((min-width: 768px) and (max-width: 1199px)) {
-  .reviewList {
-    flex-direction: column;
-    gap: 140px;
-  }
-}
-@media (max-width: 767px) {
-  .reviewList {
-    flex-direction: column;
-    gap: 80px;
-  }
 }/*# sourceMappingURL=Reviews.module.css.map */

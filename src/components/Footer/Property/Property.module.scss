@@ -1,0 +1,70 @@
+@import '../../../scss/variables';
+
+.property {
+  margin-right: 87px;
+
+  @media ($mobile) {
+    margin-right: 0;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+
+    color: #0e1735;
+  }
+}
+.propertyList {
+  &__item {
+    @media ($tablet) {
+      width: 101px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+  &__link {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    text-transform: capitalize;
+    display: inline-block;
+
+    transform: rotate(0);
+    transition: transform 300ms linear, color 300ms linear;
+
+    color: $gray-text;
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 300ms linear;
+
+      background-color: $accent;
+    }
+
+    &:hover:after,
+    &:focus:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      color: $accent;
+    }
+  }
+}

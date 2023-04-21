@@ -20,7 +20,6 @@ export const App = () => {
       <Partner />
       <Subscribe />
       <Footer />
-      <PreviousNextMethods />
     </>
   );
 };

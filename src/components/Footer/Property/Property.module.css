@@ -1,0 +1,58 @@
+.property {
+  margin-right: 87px;
+}
+@media (max-width: 767px) {
+  .property {
+    margin-right: 0;
+  }
+}
+.property__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+  color: #0e1735;
+}
+
+@media ((min-width: 768px) and (max-width: 1199px)) {
+  .propertyList__item {
+    width: 101px;
+  }
+}
+.propertyList__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.propertyList__link {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  text-transform: capitalize;
+  display: inline-block;
+  transform: rotate(0);
+  transition: transform 300ms linear, color 300ms linear;
+  color: #888b97;
+}
+.propertyList__link:hover, .propertyList__link:focus {
+  color: #047857;
+}
+.propertyList__link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 300ms linear;
+  background-color: #047857;
+}
+.propertyList__link:hover:after, .propertyList__link:focus:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #047857;
+}/*# sourceMappingURL=Property.module.css.map */

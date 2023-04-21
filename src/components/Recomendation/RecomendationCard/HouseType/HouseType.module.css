@@ -1,0 +1,15 @@
+.type_position {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  padding: 8px 16px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+}
+.type_position__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+}/*# sourceMappingURL=HouseType.module.css.map */

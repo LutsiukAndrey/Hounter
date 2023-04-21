@@ -1,11 +1,13 @@
 import classNames from 'classnames';
 import { Container } from 'components/Container/Container';
 import s from './Subscribe.module.scss';
+
+import EmailIcon from '@mui/icons-material/Email';
+
 import fase from '../../img/portret1.png';
 import fase2 from '../../img/portret2.png';
 import fase3 from '../../img/portret3.png';
 import fase4 from '../../img/portret4.png';
-
 import interier from '../../img/subscribe1.png';
 import interier2 from '../../img/subscribe2.png';
 import interier3 from '../../img/subscribe3.png';
@@ -62,13 +64,12 @@ export const Subscribe = () => {
               Subscribe For More Info and update from Hounter
             </h2>
             <form className={s.subscribeCenterblockForm}>
-              <svg
+              <EmailIcon
                 className={s.subscribeCenterblockForm__svg}
                 width="24"
                 height="24"
-              >
-                <use href="./img/sprite/sprite.svg#icon-subscribe-letter"></use>
-              </svg>
+              />
+
               <input
                 className={s.subscribeCenterblockForm__input}
                 type="email"

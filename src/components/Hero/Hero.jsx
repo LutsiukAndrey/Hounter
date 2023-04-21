@@ -144,7 +144,7 @@ export const Hero = () => {
                       </li>
                       <li className={s.rightblock_img__item}>
                         <img
-                          src={firstPortret}
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa99jqN7Q3fO3BSTVAkys1mKjv7b9CBpS_A2T28kq_Fg4AtexqZe2FyGaa9Y8bEMe941M&usqp=CAU"
                           className={s.rightblock_img__img}
                           alt="img"
                         />

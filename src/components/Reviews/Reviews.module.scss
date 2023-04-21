@@ -1,4 +1,13 @@
 @import '../../scss/variables';
+.slider {
+  width: 1440px;
+  @media ($mobile) {
+    max-width: 500px;
+  }
+  @media ($tablet) {
+    width: 768px;
+  }
+}
 
 .review {
   padding-bottom: 100px;
@@ -77,13 +86,13 @@
   display: flex;
   justify-content: center;
 
-  @media ($tablet) {
-    flex-direction: column;
-    gap: 140px;
-  }
+  // @media ($tablet) {
+  //   flex-direction: column;
+  //   gap: 140px;
+  // }
 
-  @media ($mobile) {
-    flex-direction: column;
-    gap: 80px;
-  }
+  // @media ($mobile) {
+  //   flex-direction: column;
+  //   gap: 80px;
+  // }
 }

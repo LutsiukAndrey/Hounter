@@ -38,9 +38,6 @@
 
 .footerLeftblock {
   width: 320px;
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(-100%);
 }
 @media (max-width: 767px) {
   .footerLeftblock {
@@ -109,12 +106,9 @@
   background-color: #10b981;
 }
 .footerLeftblock__svg {
-  fill: currentColor;
+  color: #626687;
 }
 
-.footerRightblock {
-  z-index: 1;
-}
 .footerRightblock__list {
   display: flex;
 }
@@ -129,84 +123,4 @@
     text-align: center;
     gap: 20px;
   }
-}
-.footerRightblock__item {
-  opacity: 0;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateY(-100%);
-}
-.footerRightblock__item:not(:last-child) {
-  margin-right: 87px;
-}
-@media (max-width: 767px) {
-  .footerRightblock__item:not(:last-child) {
-    margin-right: 0;
-  }
-}
-.footerRightblock__item:nth-child(2) {
-  transition-delay: 0.2s;
-}
-.footerRightblock__item:nth-child(3) {
-  transition-delay: 0.4s;
-}
-.footerRightblock__text {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
-  text-transform: capitalize;
-  margin-bottom: 24px;
-  color: #0e1735;
-}
-
-@media ((min-width: 768px) and (max-width: 1199px)) {
-  .footerSecondList__item {
-    width: 101px;
-  }
-}
-.footerSecondList__item:not(:last-child) {
-  margin-bottom: 18px;
-}
-.footerSecondList__link {
-  position: relative;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28;
-  text-transform: capitalize;
-  display: inline-block;
-  transform: rotate(0);
-  transition: transform 300ms linear, color 300ms linear;
-  color: #888b97;
-}
-.footerSecondList__link:hover, .footerSecondList__link:focus {
-  color: #047857;
-}
-.footerSecondList__link:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 300ms linear;
-  background-color: #047857;
-}
-.footerSecondList__link:hover:after, .footerSecondList__link:focus:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-  color: #047857;
-}
-
-.animationLeft,
-.animationTop {
-  opacity: 1;
-  transition: transform 500ms linear, opacity 500ms linear;
-  transform: translateX(0);
-}
-
-.animationTop {
-  transform: translateY(0);
 }/*# sourceMappingURL=Footer.module.css.map */

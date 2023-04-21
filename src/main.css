@@ -27,7 +27,8 @@
   transition: transform 300ms linear;
   color: #1b1c57;
 }
-.header__link:hover, .header__link:focus {
+.header__link:hover,
+.header__link:focus {
   transform: scale(1.1);
 }
 @media (max-width: 767px) {
@@ -55,7 +56,8 @@
   background-color: #d1fae5;
   color: #047857;
 }
-.header__btn:hover, .header__btn:focus {
+.header__btn:hover,
+.header__btn:focus {
   transform: scale(1.1);
 }
 @media (max-width: 767px) {
@@ -153,7 +155,8 @@
     color: #047857;
   }
 }
-.header_list__link:hover, .header_list__link:focus {
+.header_list__link:hover,
+.header_list__link:focus {
   transform: scale(1.1);
   color: #047857;
 }
@@ -203,7 +206,8 @@
   transition: transform 300ms linear;
   color: #047857;
 }
-.header_menu__link:hover, .header_menu__link:focus {
+.header_menu__link:hover,
+.header_menu__link:focus {
   transform: scale(1.1);
 }
 @media (max-width: 767px) {
@@ -254,10 +258,12 @@
   transition: transform 250ms linear;
   background-color: transparent;
 }
-.menu_btn:hover, .menu_btn:focus {
+.menu_btn:hover,
+.menu_btn:focus {
   transform: scale(1.1);
 }
-.menu_btn:hover .menu_btn__svg, .menu_btn:focus .menu_btn__svg {
+.menu_btn:hover .menu_btn__svg,
+.menu_btn:focus .menu_btn__svg {
   fill: #047857;
 }
 .menu_btn__svg {
@@ -303,4 +309,4 @@
   .container {
     width: 480px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

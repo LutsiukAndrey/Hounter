@@ -2,6 +2,8 @@ import { Container } from 'components/Container/Container';
 import s from './Reviews.module.scss';
 import classNames from 'classnames';
 import { ReviewsItem } from './ReviewsItem/ReviewsItem';
+import Slider from 'react-slick';
+import { reviewsSliderSettings } from 'js/helpers';
 export const Reviews = () => {
   return (
     <section className={s.review} id="aboutUs">
@@ -14,9 +16,14 @@ export const Reviews = () => {
         </h2>
 
         <ul className={s.reviewList}>
-          <ReviewsItem />
-          <ReviewsItem />
-          <ReviewsItem />
+          <Slider {...reviewsSliderSettings} className={s.slider}>
+            <ReviewsItem />
+            <ReviewsItem />
+            <ReviewsItem />
+            <ReviewsItem />
+            <ReviewsItem />
+            <ReviewsItem />
+          </Slider>
         </ul>
 
         <span className={s.review__span}></span>

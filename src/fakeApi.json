@@ -1,0 +1,417 @@
+
+
+
+// [
+
+
+//   {
+//     "house": {
+//       "id": 3,
+//       "type": "house",
+//       "img": "https://example.com/house3.jpeg",
+//       "name": "Historic Estate in San Francisco",
+//       "price": "25,000,000",
+//       "reting": "4.5",
+//       "description": {
+//         "text": "This iconic estate in San Francisco is one of the city's most historic properties. Built in 1910, this 5 bedroom, 5.5 bathroom home has been beautifully restored to its original grandeur. The property also features a stunning garden and outdoor entertaining spaces.",
+//         "badrooms": 5,
+//         "bathrooms": 5.5,
+//         "garage": {
+//           "available": true,
+//           "capacity": 2
+//         }
+//         //
+//         //
+//         //
+//         //
+//         //
+//         [
+//   {
+//     "house": {
+//       "id": 1,
+//       "type": "house",
+//       "img": "https://example.com/house4.jpeg",
+//       "name": "Roselands House",
+//       "price": "35.000.000",
+//       "rating": "4.3",
+//       "description": {
+//         "text": "Houses recommended by our partners that have been curated to become the home of your dreams!",
+//         "bedrooms": 4,
+//         "garage": {
+//           "capacity": 2,
+//           "description": "Attached garage with space for two cars"
+//         },
+//         "bathrooms": 2,
+//         "floors": 2
+//       }
+//     },
+//     "agent": {
+//       "photo": "https://example.com/agent1.jpeg",
+//       "name": "Dianne Russell",
+//       "jobTitle": "Managing Director",
+//       "address": "Manchester, Kentucky",
+//       "tel": "23424364563"
+//     }
+//   },
+//   {
+//     "house": {
+//       "id": 2,
+//       "type": "house",
+//       "img": "https://example.com/house7.jpeg",
+//       "name": "Modern Luxury House",
+//       "price": "25.000.000",
+//       "rating": "4.8",
+//       "description": {
+//         "text": "Stunning modern house with luxury amenities and breathtaking views",
+//         "bedrooms": 5,
+//         "garage": {
+//           "capacity": 3,
+//           "description": "Detached garage with space for three cars"
+//         },
+//         "bathrooms": 7,
+//         "floors": 3
+//       }
+//     },
+//     "agent": {
+//       "photo": "https://example.com/agent2.jpeg",
+//       "name": "John Smith",
+//       "jobTitle": "Real Estate Agent",
+//       "address": "Los Angeles, California",
+//       "tel": "123456789"
+//     }
+//   },
+//   {
+//     "house": {
+//       "id": 3,
+//       "type": "house",
+//       "img": "https://example.com/house1.jpeg",
+//       "name": "Classic Tudor House",
+//       "price": "10.000.000",
+//       "rating": "4.1",
+//       "description": {
+//         "text": "Beautifully preserved classic Tudor-style house with elegant features",
+//         "bedrooms": 3,
+//         "garage": {
+//           "capacity": 1,
+//           "description": "Attached garage with space for one car"
+//         },
+//         "bathrooms": 2,
+//         "floors": 2
+//       }
+//     },
+//     "agent": {
+//       "photo": "https://example.com/agent3.jpeg",
+//       "name": "Emily Johnson",
+//       "jobTitle": "Senior Real Estate Agent",
+//       "address": "New York, New York",
+//       "tel": "987654321"
+//     }
+//   },
+//   {
+//     "house": {
+//       "id": 4,
+//       "type": "house",
+//       "img": "https://example.com/house3.jpeg",
+//       "name": "Beachfront Villa",
+//       "price": "50.000.000",
+//       "rating": "4.9",
+//       "description": {
+//         "text": "Luxurious villa situated on the beachfront with stunning ocean views",
+//         "bedrooms":
+//         // 
+//         ///
+//         ///
+//         //
+//         //
+//         //
+//         [
+//     {
+//       "villa": {
+//         "id": 1,
+//         "type": "villa",
+//         "img": "https://example.com/villa1.jpeg",
+//         "name": "Villa del Mar",
+//         "price": "15,000,000",
+//         "rating": 4.5,
+//         "description": {
+//           "text": "Luxurious oceanfront villa with stunning views, private pool, and access to a private beach.",
+//           "bedrooms": 6,
+//           "bathrooms": 7,
+//           "garage": true,
+//           "garageCapacity": 2,
+//           "floors": 2
+//         }
+//       },
+//       "agent": {
+//         "photo": "https://example.com/agent1.jpeg",
+//         "name": "Samantha Lee",
+//         "jobTitle": "Senior Real Estate Agent",
+//         "address": "Miami, Florida",
+//         "tel": "+1 123-456-7890"
+//       }
+//     },
+//     {
+//       "villa": {
+//         "id": 2,
+//         "type": "villa",
+//         "img": "https://example.com/villa2.jpeg",
+//         "name": "Villa de la Luna",
+//         "price": "12,500,000",
+//         "rating": 4.3,
+//         "description": {
+//           "text": "Stunning hilltop villa with panoramic ocean and mountain views, infinity pool, and outdoor kitchen.",
+//           "bedrooms": 5,
+//           "bathrooms": 6,
+//           "garage": true,
+//           "garageCapacity": 3,
+//           "floors": 3
+//         }
+//       },
+//       "agent": {
+//         "photo": "https://example.com/agent2.jpeg",
+//         "name": "David Nguyen",
+//         "jobTitle": "Real Estate Agent",
+//         "address": "Los Angeles, California",
+//         "tel": "+1 123-456-7890"
+//       }
+//     },
+//     {
+//       "villa": {
+//         "id": 3,
+//         "type": "villa",
+//         "img": "https://example.com/villa3.jpeg",
+//         "name": "Villa Paradiso",
+//         "price": "8,000,000",
+//         "rating": 4.0,
+//         "description": {
+//           "text": "Beautifully designed and landscaped villa with spacious rooms, infinity pool, and stunning ocean views.",
+//           "bedrooms": 4,
+//           "bathrooms": 5,
+//           "garage": true,
+//           "garageCapacity": 2,
+//           "floors": 2
+//         }
+//       },
+//       "agent": {
+//         "photo": "https://example.com/agent3.jpeg",
+//         "name": "Maria Hernandez",
+//         "jobTitle": "Real Estate Agent",
+//         "address": "Houston, Texas",
+//         "tel": "+1 123-456-7890"
+//       }
+//     },
+//     {
+//       "villa": {
+//         "id": 4,
+//         "type": "villa",
+//         "img": "https://example.com/villa4.jpeg",
+//         "name": "Villa Bella",
+//         "price": "10,500,000",
+//         "rating": 4.2,
+//         "description": {
+//           "text": "Elegant and spacious villa with beautiful gardens, large pool, and ocean views from every room.",
+//           "bedrooms": 6,
+//           "bathrooms": 8,
+//           "garage": true,
+//           "garageCapacity": 3,
+         
+//           [
+//   {
+//     "villa": {
+//       "id": 1,
+//       "type": "villa",
+//       "img": "https://example.com/villa1.jpg",
+//       "name": "Villa del Mar",
+//       "price": "10.000.000",
+//       "rating": "4.8",
+//       "description": {
+//         "text": "Beautiful beachfront villa with private pool and stunning ocean views.",
+//         "bedrooms": 5,
+//         "bathrooms": 6,
+//         "garage": true,
+//         "garageCapacity": 2,
+//         "floors": 3
+//       }
+//     },
+//     "agent": {
+//       "photo": "https://example.com/agent1.jpg",
+//       "name": "Maria Hernandez",
+//       "jobTitle": "Real Estate Agent",
+//       "address": "Miami, Florida",
+//       "tel": "+1 (555) 123-4567"
+//     }
+//   },
+//   {
+//     "villa": {
+//       "id": 2,
+//       "type": "villa",
+//       "img": "https://example.com/villa2.jpg",
+//       "name": "Villa Alegria",
+//       "price": "8.500.000",
+//       "rating": "4.5",
+//       "description": {
+//         "text": "Luxurious hilltop villa with infinity pool and breathtaking mountain views.",
+//         "bedrooms": 6,
+//         "bathrooms": 8,
+//         "garage": true,
+//         "garageCapacity": 3,
+//         "floors": 2
+//       }
+//     },
+//     "agent": {
+//       "photo": "https://example.com/agent2.jpg",
+//       "name": "John Smith",
+//       "jobTitle": "Senior Real Estate Agent",
+//       "address": "Los Angeles, California",
+//       "tel": "+1 (555) 234-5678"
+//     }
+//   },
+//   {
+//     "villa": {
+//       "id": 3,
+//       "type": "villa",
+//       "img": "https://example.com/villa3.jpg",
+//       "name": "Villa Paradise",
+//       "price": "12.000.000",
+//       "rating": "4.9",
+//       "description": {
+//         "text": "Exclusive oceanfront villa with private beach access and state-of-the-art amenities.",
+//         "bedrooms": 7,
+//         "bathrooms": 9,
+//         "garage": true,
+//         "garageCapacity": 4,
+//         "floors": 3
+//       }
+//     },
+//     "agent": {
+//       "photo": "https://example.com/agent3.jpg",
+//       "name": "Emily Davis",
+//       "jobTitle": "Real Estate Broker",
+//       "address": "New York, New York",
+//       "tel": "+1 (555) 345-6789"
+//     }
+//   },
+//   {
+//     "villa": {
+//       "id": 4,
+//       "type": "villa",
+//       "img": "https://example.com/villa4.jpg",
+//       "name": "Villa de la Luna",
+//       "price": "6.500.000",
+//       "rating": "4.2",
+//       "description": {
+//         "text": "Charming Mediterranean-style villa with stunning views of the sea and the city.",
+//         "bedrooms": 4,
+//         "bathrooms": 5,
+//         "garage": false,
+//         "floors": 2
+//       }
+//     },
+//     "agent": {
+//       "photo": "https://example.com
+//       [
+//     {
+//         "house": {
+//             "id": 1,
+//             "type": "apartment",
+//             "img": "https://example.com/apartment1.jpeg",
+//             "name": "Luxury Apartment in Downtown",
+//             "price": "4500",
+//             "rating": "4.9",
+//             "description": {
+//                 "text": "Beautifully furnished luxury apartment located in the heart of downtown.",
+//                 "bedrooms": 3,
+//                 "bathrooms": 2,
+//                 "garage": false,
+//                 "parking": true
+//             }
+//         },
+//         "agent": {
+//             "photo": "https://example.com/agent1.jpeg",
+//             "name": "John Smith",
+//             "jobTitle": "Senior Sales Associate",
+//             "address": "New York, NY",
+//             "tel": "555-555-5555"
+//         },
+//         "type": "popular"
+//     },
+//     {
+//         "house": {
+//             "id": 2,
+//             "type": "apartment",
+//             "img": "https://example.com/apartment2.jpeg",
+//             "name": "Spacious Apartment with Stunning Views",
+//             "price": "3000",
+//             "rating": "4.7",
+//             "description": {
+//                 "text": "Beautifully renovated apartment with breathtaking views of the city.",
+//                 "bedrooms": 2,
+//                 "bathrooms": 2,
+//                 "garage": false,
+//                 "parking": true
+//             }
+//         },
+//         "agent": {
+//             "photo": "https://example.com/agent2.jpeg",
+//             "name": "Emily Johnson",
+//             "jobTitle": "Real Estate Agent",
+//             "address": "San Francisco, CA",
+//             "tel": "555-555-5555"
+//         },
+//         "type": "best deals"
+//     },
+//     {
+//         "house": {
+//             "id": 3,
+//             "type": "apartment",
+//             "img": "https://example.com/apartment3.jpeg",
+//             "name": "Brand New Luxury Apartment",
+//             "price": "5000",
+//             "rating": "4.8",
+//             "description": {
+//                 "text": "Newly built luxury apartment with state-of-the-art amenities and high-end finishes.",
+//                 "bedrooms": 4,
+//                 "bathrooms": 3,
+//                 "garage": true,
+//                 "parking": true
+//             }
+//         },
+//         "agent": {
+//             "photo": "https://example.com/agent3.jpeg",
+//             "name": "Michael Johnson",
+//             "jobTitle": "Broker",
+//             "address": "Los Angeles, CA",
+//             "tel": "555-555-5555"
+//         },
+//         "type": "new house"
+//     }
+// ]
+
+[
+    {
+      "house": { "id": 1,
+      "type": "house",
+        "img": "data:image//2Q==",
+        "name": "Roselands House",
+        "price":"35.000.000",
+        "reting": "4.3",
+    "description":{
+        "text": "Houses recommended by our partners that have been curated to become the home of your dreams!",
+        "badrooms": 4,
+        "carport": 1,
+"bathrom": 2,
+"floors": 2
+    
+    }
+    },
+
+        "agent":{
+            "photo":"",
+            "name": "Dianne Russell",
+            "jobTitle": "Manager Director",
+            "adress":"Manchester, Kentucky",
+            "tel": "23424364563"
+        }
+    
+    }
+]

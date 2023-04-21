@@ -5,6 +5,12 @@ import { HandySvg } from 'handy-svg';
 import logo from '../../img/logo.svg';
 import green from '../../img/footer-green.png';
 import blue from '../../img/footer-blue.png';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import { Article } from './Article/Article';
+import { Property } from './Property/Property';
+import { Contacts } from './Contacts/Contacts';
 
 export const Footer = () => {
   return (
@@ -17,9 +23,10 @@ export const Footer = () => {
             src={green}
             alt="png"
           />
-          <div className={classNames(s.footerLeftblock, s.animationLeft)}>
+          <div className={s.footerLeftblock}>
             <a href="#" className={s.footerLeftblock__link}>
               <HandySvg
+                height="32px"
                 width="32px"
                 src={logo}
                 className={s.footerLeftblock__logo}
@@ -35,118 +42,38 @@ export const Footer = () => {
             <ul className={s.footerLeftblock__list}>
               <li className={s.footerLeftblock__item}>
                 <a className={s.footerLeftblock__socialLink} href="#">
-                  <svg
+                  <FacebookIcon
                     className={s.footerLeftblock__svg}
                     width="32"
                     height="32"
-                  >
-                    <use href="./img/sprite/sprite.svg#icon-footer1"></use>
-                  </svg>
+                  />
                 </a>
               </li>
               <li className={s.footerLeftblock__item}>
                 <a className={s.footerLeftblock__socialLink} href="#">
-                  <svg
+                  <TwitterIcon
                     className={s.footerLeftblock__svg}
                     width="32"
                     height="32"
-                  >
-                    <use href="./img/sprite/sprite.svg#icon-footer2"></use>
-                  </svg>
+                  />
                 </a>
               </li>
               <li className={s.footerLeftblock__item}>
                 <a className={s.footerLeftblock__socialLink} href="#">
-                  <svg
+                  <InstagramIcon
                     className={s.footerLeftblock__svg}
                     width="32"
                     height="32"
-                  >
-                    <use href="./img/sprite/sprite.svg#icon-footer3"></use>
-                  </svg>
+                  />
                 </a>
               </li>
             </ul>
           </div>
           <div className={s.footerRightblock}>
             <ul className={s.footerRightblock__list}>
-              <li
-                className={classNames(s.footerRightblock__item, s.animationTop)}
-              >
-                <p className={s.footerRightblock__text}>Property</p>
-                <ul className={s.footerSecondList}>
-                  <li className={s.footerSecondList__item}>
-                    <a className={s.footerSecondList__link} href="#">
-                      House
-                    </a>
-                  </li>
-                  <li className={s.footerSecondList__item}>
-                    <a className={s.footerSecondList__link} href="#">
-                      Apartment
-                    </a>
-                  </li>
-                  <li className={s.footerSecondList__item}>
-                    <a className={s.footerSecondList__link} href="#">
-                      Villa
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li
-                className={classNames(s.footerRightblock__item, s.animationTop)}
-              >
-                <p className={s.footerRightblock__text}>Article</p>
-                <ul className={s.footerSecondList}>
-                  <li className={s.footerSecondList__item}>
-                    <a className={s.footerSecondList__link} href="#">
-                      New Article
-                    </a>
-                  </li>
-                  <li className={s.footerSecondList__item}>
-                    <a className={s.footerSecondList__link} href="#">
-                      Popular Article
-                    </a>
-                  </li>
-                  <li className={s.footerSecondList__item}>
-                    <a className={s.footerSecondList__link} href="#">
-                      Most Read
-                    </a>
-                  </li>
-                  <li className={s.footerSecondList__item}>
-                    <a className={s.footerSecondList__link} href="#">
-                      Tips & Tricks
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li
-                className={classNames(s.footerRightblock__item, s.animationTop)}
-              >
-                <p className={s.footerRightblock__text}>Contact</p>
-                <ul className={s.footerSecondList}>
-                  <li className={s.footerSecondList__item}>
-                    <a className={s.footerSecondList__link} href="#">
-                      2464 Royal Ln. Mesa, New Jersey 45463
-                    </a>
-                  </li>
-                  <li className={s.footerSecondList__item}>
-                    <a
-                      className={s.footerSecondList__link}
-                      href="tel:6715550110"
-                    >
-                      (671) 555-0110
-                    </a>
-                  </li>
-                  <li className={s.footerSecondList__item}>
-                    <a
-                      className={s.footerSecondList__link}
-                      href="mailto:info@hounter.com"
-                    >
-                      info@hounter.com
-                    </a>
-                  </li>
-                </ul>
-              </li>
+              <Property />
+              <Article />
+              <Contacts />
             </ul>
           </div>
         </div>

@@ -7,23 +7,6 @@
   padding-bottom: 96px;
   z-index: 3;
 
-  //animation
-  &__fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 4;
-
-    // background-color: $accent;
-    background-color: #047857d4;
-  }
-  //
-
-  &__position {
-    position: relative;
-  }
-
   &__link {
     display: inline-flex;
     align-items: center;
@@ -99,7 +82,7 @@
   }
 }
 
-.header_flex {
+.header_wraper {
   display: flex;
   align-items: center;
   @media ($desktop) {

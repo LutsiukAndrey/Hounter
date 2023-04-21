@@ -1,28 +1,20 @@
 .reviewList__item {
   position: relative;
+  height: 505px;
 }
-.reviewList__item:not(:last-child) {
-  margin-right: 56px;
-}
-@media (max-width: 767px) {
-  .reviewList__item:not(:last-child) {
-    margin-right: 0;
-  }
-}
-.reviewList__item__img {
+.reviewList__img {
   width: 740px;
   height: 400px;
 }
 @media (max-width: 767px) {
-  .reviewList__item__img {
-    width: 440px;
-    object-fit: contain;
+  .reviewList__img {
+    max-width: 450px;
   }
 }
 
 .reviewContent {
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, 56px);
   width: 612px;
