@@ -212,7 +212,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  border-radius: 4px;
+  border-radius: 15px;
 }
 @media ((min-width: 768px) and (max-width: 1199px)) {
   .sellRightblock__img {
@@ -226,6 +226,8 @@
   }
 }
 .sellRightblock__img_main {
+  max-width: 488px;
+  max-height: 416px;
   z-index: -1;
 }
 .sellRightblock__img_bed {

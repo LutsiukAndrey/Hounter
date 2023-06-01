@@ -8,15 +8,34 @@ import { Partner } from 'components/Partner/Partner';
 import { Subscribe } from 'components/Subscribe/Subscribe';
 import { Footer } from 'components/Footer/Footer';
 import { PreviousNextMethods } from 'components/Test';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import { baseUrl } from 'js/API';
 
 export const App = () => {
+  const [housesArr, setHousesArr] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [filtredHouses, setFiltredHouses] = useState([]);
+  const [isReadyToSellArr, setIsReadyToSellArr] = useState([]);
+
+  useEffect(() => {
+    const getHouses = async () => {
+      const { data } = await axios.get(baseUrl);
+      setHousesArr(data);
+      setIsReadyToSellArr(data.filter(house => house.readyToSell));
+      setIsLoading(false);
+    };
+    getHouses();
+  }, []);
+
   return (
     <>
       <Header />
       <Hero />
-      <Recomendation />
-      <ReadyToSell />
-      <Reviews />
+
+      {isLoading ? <></> : <Recomendation data={housesArr} />}
+      {isLoading ? <></> : <ReadyToSell data={isReadyToSellArr} />}
+      {isLoading ? <></> : <Reviews data={housesArr} />}
       <Partner />
       <Subscribe />
       <Footer />

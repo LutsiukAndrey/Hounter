@@ -1,13 +1,14 @@
-.reviewList__item {
+.reviewItem {
   position: relative;
   height: 505px;
 }
-.reviewList__img {
+.reviewItem__img {
   width: 740px;
   height: 400px;
+  border-radius: 25px;
 }
 @media (max-width: 767px) {
-  .reviewList__img {
+  .reviewItem__img {
     max-width: 450px;
   }
 }

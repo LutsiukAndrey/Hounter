@@ -1,10 +1,5 @@
 import classNames from 'classnames';
 import s from './ReadyToSell.module.scss';
-import face from '../../img/portret1.png';
-import room from '../../img/sell-rightblock4.jpg';
-import main from '../../img/sell-rightblock3.jpg';
-import vase from '../../img/sell-rightblock2.jpg';
-import sofa from '../../img/sell-rightblock1.jpg';
 import orange from '../../img/sell-orange.png';
 import { Container } from 'components/Container/Container';
 import yellow from '../../img/sell-yellow.png';
@@ -13,7 +8,12 @@ import GarageIcon from '@mui/icons-material/Garage';
 import BedIcon from '@mui/icons-material/Bed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import StairsIcon from '@mui/icons-material/Stairs';
-export const ReadyToSell = () => {
+
+export const ReadyToSell = ({ data }) => {
+  const { agent, house } = data[0];
+  const normolizeTel = tel => {
+    return Number(tel.trim().replace(/[^+\d]/g, ''));
+  };
   return (
     <section className={s.sell}>
       <Container>
@@ -37,7 +37,9 @@ export const ReadyToSell = () => {
                   height="32"
                 />
 
-                <p className={s.sellLeftblockList__text}>4 Bedrooms</p>
+                <p className={s.sellLeftblockList__text}>
+                  {house.description.bedrooms} Bedrooms
+                </p>
               </li>
               <li className={s.sellLeftblockList__item}>
                 <BathtubIcon
@@ -46,7 +48,9 @@ export const ReadyToSell = () => {
                   height="32"
                 />
 
-                <p className={s.sellLeftblockList__text}>2 Bathrooms</p>
+                <p className={s.sellLeftblockList__text}>
+                  {house.description.bathrooms} Bathrooms
+                </p>
               </li>
               <li className={s.sellLeftblockList__item}>
                 <GarageIcon
@@ -54,7 +58,9 @@ export const ReadyToSell = () => {
                   width="32"
                   height="32"
                 />
-                <p className={s.sellLeftblockList__text}>1 Carport</p>
+                <p className={s.sellLeftblockList__text}>
+                  {house.description.carport} Carport
+                </p>
               </li>
               <li className={s.sellLeftblockList__item}>
                 <StairsIcon
@@ -63,7 +69,9 @@ export const ReadyToSell = () => {
                   height="32"
                 />
 
-                <p className={s.sellLeftblockList__text}>2 Floors</p>
+                <p className={s.sellLeftblockList__text}>
+                  {house.description.floor} Floors
+                </p>
               </li>
             </ul>
 
@@ -72,29 +80,33 @@ export const ReadyToSell = () => {
             <div className={s.sellLeftblockDown}>
               <div className={s.sellLeftblockDown__block}>
                 <img
-                  src={face}
+                  src={agent.photo}
                   className={s.sellLeftblockDown__img}
                   alt="img"
                 />
                 <div>
-                  <h3 className={s.sellLeftblockDown__title}>Dianne Russell</h3>
-                  <p className={s.sellLeftblockDown__text}>Manager Director</p>
+                  <h3 className={s.sellLeftblockDown__title}>{agent.name}</h3>
+                  <p className={s.sellLeftblockDown__text}>{agent.jobTitle}</p>
                 </div>
               </div>
-              <button className={s.sellLeftblockDown__btn} type="button">
+              <a
+                className={s.sellLeftblockDown__btn}
+                type="tel"
+                href={`tel:${normolizeTel(agent.tel)}`}
+              >
                 <PhoneIcon
                   width="24"
                   height="24"
                   className={s.sellLeftblockDown__svg}
                 />
                 Contact Now
-              </button>
+              </a>
             </div>
           </div>
 
           <div className={classNames(s.sellRightblock, s.animationLeft)}>
             <img
-              src={sofa}
+              src={house.images[1]}
               className={classNames(
                 s.sellRightblock__img,
                 s.sellRightblock__img_bed
@@ -103,7 +115,7 @@ export const ReadyToSell = () => {
             />
 
             <img
-              src={vase}
+              src={house.images[2]}
               className={classNames(
                 s.sellRightblock__img,
                 s.sellRightblock__img_vase
@@ -111,8 +123,8 @@ export const ReadyToSell = () => {
               alt="img"
             />
 
-            <video
-              poster={main}
+            <img
+              src={house.images[0]}
               className={classNames(
                 s.sellRightblock__img,
                 s.sellRightblock__img_main
@@ -121,7 +133,7 @@ export const ReadyToSell = () => {
             />
 
             <img
-              src={room}
+              src={house.images[3]}
               className={classNames(
                 s.sellRightblock__img,
                 s.sellRightblock__img_room

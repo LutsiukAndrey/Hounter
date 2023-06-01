@@ -1,13 +1,13 @@
 @import '../../../scss/variables';
 
-.reviewList {
-  &__item {
-    position: relative;
-    height: 505px;
-  }
+.reviewItem {
+  position: relative;
+  height: 505px;
+
   &__img {
     width: 740px;
     height: 400px;
+    border-radius: 25px;
 
     @media ($mobile) {
       max-width: 450px;

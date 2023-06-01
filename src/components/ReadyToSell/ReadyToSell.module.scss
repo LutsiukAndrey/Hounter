@@ -234,7 +234,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    border-radius: 4px;
+    border-radius: 15px;
 
     @media ($tablet) {
       top: 80px;
@@ -245,6 +245,8 @@
       width: 420px;
     }
     &_main {
+      max-width: 488px;
+      max-height: 416px;
       z-index: -1;
     }
 

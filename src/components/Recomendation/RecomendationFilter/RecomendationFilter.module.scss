@@ -18,7 +18,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 56px;
+      margin-right: 10px;
 
       @media ($mobile) {
         margin-right: 0;

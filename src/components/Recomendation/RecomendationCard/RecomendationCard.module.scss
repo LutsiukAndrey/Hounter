@@ -29,11 +29,12 @@
 
   &__img {
     width: 349px;
+    max-height: 200px;
     border-radius: 25px;
   }
   &__content {
     position: relative;
-    max-width: 349px;
+    max-width: 90%;
   }
 
   &__firstContent {

@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import Slider from 'react-slick';
 
@@ -9,26 +9,11 @@ import { sliderSettings } from 'js/helpers';
 import { RecomendationCard } from './RecomendationCard/RecomendationCard';
 import { Container } from 'components/Container/Container';
 import { RecomendationFilter } from './RecomendationFilter/RecomendationFilter';
-
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { useEffect } from 'react';
-import axios from 'axios';
-import { baseUrl } from 'js/API';
+import { nanoid } from 'nanoid';
 
-export const Recomendation = () => {
-  const [housesArr, setHousesArr] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [filtredHouses, setFiltredHouses] = useState([]);
-  useEffect(() => {
-    const getHouses = async () => {
-      const { data } = await axios.get(baseUrl);
-      setHousesArr(data);
-      setIsLoading(false);
-    };
-    getHouses();
-  }, []);
-
+export const Recomendation = ({ data }) => {
   let slider = useRef(null);
 
   const next = () => {
@@ -38,7 +23,22 @@ export const Recomendation = () => {
   const previous = () => {
     slider.slickPrev();
   };
-  console.log(housesArr.filter(e => e.type === 'apartment'));
+  //
+  //
+  const [filteredValue, setfilteredValue] = useState('');
+
+  const [filteredHouse, setFilteredHouse] = useState(data);
+  useEffect(() => {
+    setFilteredHouse(
+      filteredValue !== 'all'
+        ? data.filter(house => house.type.includes(filteredValue))
+        : data
+    );
+  }, [data, filteredValue]);
+  console.log(filteredHouse);
+
+  //
+  //
   return (
     <section className={s.recommendation}>
       <Container>
@@ -48,7 +48,7 @@ export const Recomendation = () => {
           <h2 className={s.recommendation__title}>Featured House</h2>
 
           <div className={s.recommendationBtns}>
-            <RecomendationFilter />
+            <RecomendationFilter filtered={setfilteredValue} />
             <ul className={s.recommendationListBtn}>
               <li className={s.recommendationListBtn__item}>
                 <button
@@ -73,19 +73,15 @@ export const Recomendation = () => {
           </div>
         </div>
         <div style={{ overflow: 'hidden' }}>
-          {isLoading ? (
-            <></>
-          ) : (
-            <Slider
-              ref={c => (slider = c)}
-              {...sliderSettings}
-              className={s.recommendationList}
-            >
-              {housesArr.map(house => {
-                return <RecomendationCard data={house} key={house.id} />;
-              })}
-            </Slider>
-          )}
+          <Slider
+            ref={c => (slider = c)}
+            {...sliderSettings}
+            className={s.recommendationList}
+          >
+            {filteredHouse.map(house => {
+              return <RecomendationCard data={house} key={nanoid()} />;
+            })}
+          </Slider>
         </div>
       </Container>
     </section>

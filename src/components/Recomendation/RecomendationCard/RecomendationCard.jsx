@@ -1,16 +1,18 @@
 import s from './RecomendationCard.module.scss';
-import houseImg from '../../../img/recommen-house4.jpg';
 import classNames from 'classnames';
-import portret from '../../../img/portret1.png';
 import { HouseType } from './HouseType/HouseType';
 
 export const RecomendationCard = ({ data }) => {
-  const { agent, house, type } = data;
+  const { agent, house } = data;
 
   return (
     <li className={classNames(s.recommendationItem__item, s.animation_left)}>
       <div className={s.recommendationItem__content}>
-        <img src={houseImg} className={s.recommendationItem__img} alt="img" />
+        <img
+          src={house.images[0]}
+          className={s.recommendationItem__img}
+          alt="img"
+        />
         <HouseType type={house.type} />
       </div>
       <div className={s.recommendationItem__firstContent}>

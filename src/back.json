@@ -1,5 +1,7 @@
 [{
   "id": 1,
+
+"readyToSell": true,
   "type": "villa",
   "house": {
     "type": "best",
@@ -15,9 +17,10 @@
       "floor": 3
     },
     "images": [
-      "https://example.com/villa1.jpg",
-      "https://example.com/villa2.jpg",
-      "https://example.com/villa3.jpg"
+      "https://www.engelvoelkers.com/images/7023ee90-3b60-4216-9ec3-5dac4c6ea33f/modern-villa-project-with-innovative-concept",
+      "https://www.engelvoelkers.com/images/00655651-de94-4afc-9d0f-73a7862e798b/modern-villa-project-with-innovative-concept",
+      "https://www.engelvoelkers.com/images/b9dd5acd-9bd6-4a43-94b6-5ebc982e0e53/modern-villa-project-with-innovative-concept",
+      "https://www.engelvoelkers.com/images/71485c9c-f885-4c15-a8ae-6b4d9a0d61e7/modern-villa-project-with-innovative-concept"
     ]
   },
   "agent": {
@@ -31,7 +34,9 @@
 
 },{
   "id": 2,
-"type": "apartment",
+
+"readyToSell": false,
+  "type": "apartment",
 "house": {
 "type": "new",
 "name": "Spacious apartment in New York City",
@@ -46,9 +51,10 @@
 "floor": 12
 },
 "images": [
-"https://example.com/apartment4.jpg",
-"https://example.com/apartment5.jpg",
-"https://example.com/apartment6.jpg"
+"https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyP65KuZcxJECwlcqG1Hy3C5SXdPKWdUT19km8AF773~qEi9QtIpvFIUiWixXsE94qwlp8whn4HQKo5bqtkeCcw6Cq8aGfth~sWlsrfn1tAr4L0v6uM0R_0Bntb5mvWW62OhNYaiX9EdD4pkenE42ReuIDNM3D35HZePytrrfNpigHe7Zk3mACEIdJ1sPLDM4dEezIOeVlSOeZ8Sx3~oYaCGwFOcO7KDQyiCU5su3HHG.jpg",
+"https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyP65KuZILVAhD~FwS8IoKmKevlIYEqIEUapdOLrt~Sk6gpCaRP_AcTIyiwNmBbmfLxawJNv3EfTAVCRC9TSnfvnb31irvKbsT~~oTmD2q16StNg60lGDpS0amh0BfnAjQvr5J~HPiIHKeO4ymPk5KqG2lOzoYMOSqL_8hp58SlyCV1k9VL1FOIubbVZf25hoqjrrgmQT4x00wAmxNh3FrRVl8XL7uYgaEhjggw2zxn8.jpg",
+"https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyP65KuZJMPJ5wesPzF18T5dJpaKJr_23sBQjgcjvTABApZ6zHeBDpbAknP9GdhwU5bGgC2z1rpC_wu1iCH3CPPqt8N7QU1P3kPJJMhhtJrkRLfK24T5Kp~WPrO_ZtFrRC1we32sKQmvbgKL5bl4dznJrQd3iOVVYw6ubaR9v_kKTCHDdiqZGEZ0OK4CHLLcZ7FciLc_X7eRSwXyf2tm3E_h85zRyE4Cq4~b6ZaAymz~.jpg",
+"https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyP65KuZJJXllLrp~fihA5td7owscalPeP2RZfGpFacIA57719nIrWwXFQHdJBaJDsBM9b0RUNNbaoF~bBR903cI66rUk2heDORBkE~OOqdm_rDugRO55bwz~GZgiM5yt2Zd7n_I8p51~OWIV0h3k93YBbF0eFaOJU0OKu20gllyCClGb2y0WPBqlWD60mrmflc3QXmGOyTi~iLsBF1aQHxo2coiYNYZ5g09gzX~ed8B.jpg"
 ]
 },
 "agent": {
@@ -61,7 +67,9 @@
 },
 {
   "id": 3,
-"type": "house",
+
+"readyToSell": true,
+  "type": "house",
 "house": {
 "type": "new",
 "name": "Stylish luxury home in Beverly Hills",
@@ -76,7 +84,7 @@
 "floor": 2
 },
 "images": [
-"https://example.com/house2.jpg",
+"https://novahata.kiev.ua/wp-content/uploads/2019/07/Planirovka1.jpg",
 "https://example.com/house3.jpg",
 "https://example.com/house4.jpg"
 ]
@@ -91,7 +99,9 @@
 },
 {
   "id": 4,
-"type": "house",
+
+"readyToSell": true,
+  "type": "house",
 "house": {
 "type": "best",
 "name": "Spacious modern house in Beverly Hills",
@@ -106,7 +116,7 @@
 "floor": 2
 },
 "images": [
-"https://example.com/house1.jpg",
+"https://dolce-house.ru/assets/images/products/11/big/img-7751-(1).jpg",
 "https://example.com/house2.jpg",
 "https://example.com/house3.jpg"
 ]
@@ -121,7 +131,9 @@
 },
 {
   "id": 5,
-"type": "house",
+
+"readyToSell": false,
+  "type": "house",
 "house": {
 "type": "hot",
 "name": "Contemporary house in San Francisco",
@@ -136,7 +148,7 @@
 "floor": 2
 },
 "images": [
-"https://example.com/house1.jpg",
+"https://dolce-house.ru/assets/images/products/11/img-7790.jpg",
 "https://example.com/house2.jpg",
 "https://example.com/house3.jpg"
 ]
@@ -152,7 +164,9 @@
 
 {
   "id": 6,
-"type": "apartment",
+
+"readyToSell": false,
+  "type": "apartment",
 "house": {
 "type": "new",
 "name": "Spacious apartment with stunning views in Chicago",
@@ -166,9 +180,10 @@
 "floor": 10
 },
 "images": [
-"https://example.com/apartment4.jpg",
-"https://example.com/apartment5.jpg",
-"https://example.com/apartment6.jpg"
+"https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWYtLdKzkwd37xotyFlJh8s6CoQqmeSeH409xdTgT23~fMNLoyrEklRDjsTeEfUCOWsENLT9hpnb_Kwzp8ykBumQEUPHxDF8hj5E_jLOVqTrruqsiZETpBJceK9ma1OANrZi~ysSAiujhLstHBSDsfFEE1K132nPy5Bguyao1oR5JR0FhpcZxc1vPe~9NRXyndpafA98CcpqRRflkskMJQo_94V7ROaJ_ii2va3OGLVocuI.jpg",
+"https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWYtLdKzkwd0uSTxwFJDnPTOuw1SkvvZnfg~54JKW3zLv9Z9XqYasuENA_Jq6mAHVRyoXgJmcIoflK3w7Lv1A8G5AK3z2xYyuP46h030ojHPWUoS3yLG21OPTuddmJ1oZWvTlwB5SrT5ZrgYKmn7laZvj21PtALQAjO26jbYk6hsuq7STGuXX75x~aHadFiaE9_PfiAiLjhe9EnteonDk06HNRnhDzCkbr7UOiOxzBDxqDE.jpg",
+"https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWYtLdKzkwd3CKI_9kIpzvKOU6wAzK765n99ALDFfRzTEs7My8BCP5ZU3lTUurJW8CLPddE_1EeB64Hg9jl3Ibsq1Nqspc43IEUr21BxC3YK3Fx1Up7XNQaYqafbaMfg1tZOTP4cLozlQOBZCxMcd4b6kLFqVhhJISQW96hN7d~U7IpEj4AViTVrPOaNJZEE7N8WgGINNgIqsTDZWvFv6Y~GkhOoNOKL1~QoYWb9Zjiacxb.jpg",
+"https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWYtLdKzkwd0~hDDQ4D8xon22p9919m8ePrmrj_6mBPptzzQjLFh9E7VBmu_QaM3kEAPxrbNIPO8ZefaFwph8i_7F93kIEGMTcqkDD7eeLyFXXXNNWD3smLBEgjcukmdALqOIrupRghEyglGk7x8nlYorIQJgYZpUDzp6wonk4rd9mIX_7l3OypNkN378r2Nxt_cTbn1GiXVPURBonq~MJ5K7aTg_HWfKhUzAhDsXvz4asd.jpg"
 ]
 },
 "agent": {
@@ -181,6 +196,8 @@
 },
 {
   "id": 7,
+
+"readyToSell": true,
   "type": "apartment",
   "house": {
     "type": "hot",
@@ -195,9 +212,10 @@
       "floor": 6
     },
     "images": [
-      "https://example.com/apartment4.jpg",
-      "https://example.com/apartment5.jpg",
-      "https://example.com/apartment6.jpg"
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyAmCmvmbLf2n1XP03bKXwdmkIDEReO6neT726WpZ77adbsW8P8XcvXn3FYiTfNe13jlJSUWUxMjSLB2lnllrQv4Gq5PHCPPgst2bRPfZXMR6mM4YlBZ7V6ZfQGNuq41pfnUOYOyq~sfZj~Z7w0HvGRaJPVNvzLqm9piD2mGrw9vkmD63AIvUsqURXGA9HpfHb1TvN442MPxcRDRLr5e8a2vf1I7PFsCMk~XRUJd5agg.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyAmCmvmOQ8f~l66gXNSTbFehyHaQeHzkZyqsSskIzpMOvh~OR0MVO4XqGjbEQJr8WJkjvfOREmRn0yAuKCKgBtRfIfM6Ekfm5zAPVt64YkQBRimMKVSyO~jNaR8Bu5mF9MILDbzuwOh82WJjfzNCHZ1a6EeZFqDV3gGlV~mNKh1cJbS~BlAfa2vnUEr_S3eoN9oUq_XW2hv5OhFDk9bpgUd1IUdHj5aS863NSebo6s5.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyAmCmvmbLE5OpFoPAHM1dP2zjHUU95OshoSL99Xwu41qYLI5u2gjtUrStpIMclWaannIUTJem1LkptTOA54OOhrXh0WBFjDdao8VPvHrho_CaBVyD4JFHVGPIhRBUeDTDkGnsFUkDB~eerm0nuLaw8rdCzqfRIFsCpJ3XoTzm1V4dEoB2JFOnqU6NFFm58wN3oqaeoBJXg3fZCoYHa1lRgFSKQx59KC27B4lRPqucan.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyAmCmvmParzjQDszX47SRpbWdaKXsyq5dX4e4hQ2WN~GrEc_Gh9n70Nf6g26F4HxL3Lm4Ur7uZO6jAr6Q6DipU6lZdYjoTRcMcGehnYOBc~7qqAJTNJpP6SK86kWBSjDXl51KaEZM_rjUNueTW_iClsu_4KUfoDH1UN6dZNSBFoAp03xTWwztDdBKkcfmRmFN9eSVM9AfG9wiL3j6Cji7UDw0N_EEq9O3OseIjyuShS.jpg"
     ]
   },
   "agent": {
@@ -210,6 +228,8 @@
 },
 {
   "id": 8,
+
+"readyToSell": false,
   "type": "house",
   "house": {
     "type": "best",
@@ -225,7 +245,7 @@
       "floor": 3
     },
     "images": [
-      "https://example.com/house1.jpg",
+      "https://dolce-house.ru/assets/images/products/36/01.jpg",
       "https://example.com/house2.jpg",
       "https://example.com/house3.jpg"
     ]
@@ -240,6 +260,8 @@
 },
 {
   "id": 9,
+
+"readyToSell": false,
   "type": "house",
   "house": {
     "type": "new",
@@ -255,7 +277,7 @@
       "floor": 2
     },
     "images": [
-      "https://example.com/house1.jpg",
+      "https://dolce-house.ru/assets/images/products/39/01.jpg",
       "https://example.com/house2.jpg",
       "https://example.com/house3.jpg"
     ]
@@ -270,6 +292,8 @@
 },
 {
   "id": 10,
+  "readyToSell": true,
+
   "type": "apartment",
   "house": {
     "type": "hot",
@@ -284,9 +308,10 @@
       "floor": 5
     },
     "images": [
-      "https://example.com/apartment4.jpg",
-      "https://example.com/apartment5.jpg",
-      "https://example.com/apartment6.jpg"
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyPzf~vV0P53WbPQN2S5aRlh3ktxgc5o8jWdPYqfp5ZS2D~CjQ6uNB3nFbVMnjisEIcM2E0aolS0m3LfHClMM8x2amWf5_~Dj47Tp2iXAaG4rv~mec7zzRWfnUuy9S2X7MXEblqx457zOOf_mkytl7qV~uuZ6E2RvnfjFC50PzMZgsssehL9_6CExaS91Er4ei5jlid22JyZgFcZRin6NYaG2ExhGSZUUmjBenvOtius.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyPzf~vV3_tqwjOI52TM7QxWaWC8B8oR_hyyPo2CU9S0X09QlrgCbwwFpsF7CZnKPw51C4CU2lq3fhWh6YYglItUh2ZwNUyn8AWK6rqZVit2QJkxN4wFuezGhSY7LRDUKkkFLAdxVOOL~fhbm5II8Mu84b0JH_R5lBu4jcX5xpOyIZxsLiYiXg9VXT7JE6EFeMeZY5pQq4W1PUEG3imYn42W9~OQvF3VU~DOYR6Djh_I.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyPzf~vVig93eKgyIW2AL8T68PrgdHOJT7PaTTm8fh0gBc7e86Ol7FrJ13lsLtPbLzVuHaTshzT8LJ9J3X2ckG4b4j0OGzi5BD9KmZChDcuSmXgZnX2dJUbMxNr5h1DwSQBx1L7jD5zapPryoyL3uOsFdJeaAGJmmFhgU1I02hNcYWAWfTnM97V1ciIaXg3HZWjk35Tl2XbRhtoOZQosVW4gHSuoNTsnSPG~k69nh24b.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyPzf~vVjaoPXUJrhbmIFP8TglU6aJOmyVfkp32oZc05isUhDUXNL~I~~HxnQFRU9K0Oei0OkakpGFI5O1ThDxan3JqeFdFppWPaV42wrH4Pj_uxKJ8auhYftzgHJEiErSZRnLYWDduaN95NZfjhnHprQ38dw399790zJsJitPqArLDs77f2PB9_sUM6ZjwXQfO8J47DZ32ze9Fs9o_MwTzTfNqE_YTm4k27d7lUs6rB.jpg"
     ]
   },
 "agent": {
@@ -298,6 +323,8 @@
 }
 },{
   "id": 11,
+  "readyToSell": false,
+
   "type": "house",
   "house": {
     "type": "new",
@@ -313,7 +340,7 @@
       "floor": 2
     },
     "images": [
-      "https://example.com/house1.jpg",
+      "https://dolce-house.ru/assets/images/products/41/01.jpg",
       "https://example.com/house2.jpg",
       "https://example.com/house3.jpg"
     ]
@@ -328,6 +355,8 @@
 },
 {
   "id": 12,
+  "readyToSell": false,
+
   "type": "apartment",
   "house": {
     "type": "best",
@@ -343,9 +372,10 @@
       "floor": 20
     },
     "images": [
-      "https://example.com/apartment4.jpg",
-      "https://example.com/apartment5.jpg",
-      "https://example.com/apartment6.jpg"
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyP64HyZy2sX2IXE~GOG7k0h9xkiWY8v6LgRe3u9zR4ig4p9JVESR1571YQ4hu6YrGGWicP701wTjaVcol1ka6dPPAVKg8sxhmxqJFsNKSxSL_p7NbsqkdEe4W2861YM5~6QA6lUBNTtq76M5u7mwVnLmbQ1IfpeKLnVcwAHvOr_NG99dUS2RIm1f2Qy~i5WoE_3YrgfEPONs~cLTcK9axPHJqg1m6GDS0efQUfMpUrw.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyP64HyZmADcKsZmdegIThcuARSVcP2cXFZUtj3ghLT7h0IpwFiK3xcgfKsYKeFiwDKNgAeXq93wtrxoxo1PsSVNb2uD~gD~NayDq7Ur6Vh0aopNhkRVvKO6wHJfh1AouxKC86yF8jyxroZZd3K1CkeGVgtC4GIgqmw6CCowRyuXEDXAJny~EnuHRrVZ4ROu6_GTYIcKe1VwAgdAeMReFbRnEcO8bhv0nX3ie604yuHy.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyP64HyZymvYBTLLlg6QswoaLiUkCDYM8XIYUgoKC94XCDQisWX~cx7Yfjf8RqytWLddR0by8uNCrCe3UP9RN_rLyf47riOOcdFMGMCRVKWuHpO~H~~sx3bh6hVVBjVaSw4RRskynUOlYvdihYh9TgayLIzEa~I3w1TIlHxLh8K6XIi2TTXza5gWZ1Sygjkl3ZzBWY78HujaPrArh9D2V4LX0QWh1gPDv49lKf0yJMo7.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyP64HyZzjdy9JZyG~78y25I6qNo_NYHmRsIPvmZ~c2qJBWFJSiE~cHb2Qm5GqipdC9wIEuM9vh0Yby7uHU~bfpRNwz6YVBpmkNnYggwiIBJUpUX96J~qdQOd9uBy0jhYPO7jz1KIcJWZxOLVfloPP9EpTvMnaf47kjjJbb32eBPKxXC4tmIBRQ1CLMDik9_Uqwgys05UITc4iUncHPnc3cBUZ7581p25POVocR19i5H.jpg"
     ]
   },
   "agent": {
@@ -359,6 +389,8 @@
 
 {
   "id": 13,
+  "readyToSell": true,
+
   "type": "apartment",
   "house": {
     "type": "best",
@@ -374,9 +406,10 @@
       "floor": 22
     },
     "images": [
-      "https://example.com/penthouse1.jpg",
-      "https://example.com/penthouse2.jpg",
-      "https://example.com/penthouse3.jpg"
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyLldGJNDCQVC9P748gQdK8KJSy_yF2~7TrUfolqFpwFyh_wDkhWp4emR~lVoSlcVKXBfCquPTY9b~nTcB1RgJ6vX4GzULCJZrslbyLHtiYB2BbapTgcwtPkDKuKk27RXqyQXwmG2zPJNB7nQPsaWg9cJf8Z2CHDwuEARc3pvHRwTq4YwKJ~6HYZJTdaJ2FWvKrPga4_6uZQGdf8lZZztoouSZQoXTf7CxGxovxrHn0_.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyLldGJNWbKDu00lUlpOABXBUcRHNeONd9vwiGBHqOezi1l0_baaai4gi8p8aZBIi0l01xQnwzkKojZZmWq~0SuQJehpx2ra7AE31hXf6SVqJ4xVVy5BAVd1IGeKyHoOCslSwBQWNLOY_aQKkV2mBY5ajLLvcC2vhHLTJifQWJgPIeBh~DtlkD2A5UdssaEtlUft008uZxsSoYHtFRMznREwlWHrARycbqyMPmiubwu9.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyLldGJNCGoUiyTHsI6ht2GDG4BiYpga78R8y2F4f~3Po7NJYJci_xbbQT7Wybt3IcINge9kRMB6qmCg3S9qJ~0X2ZgHfNe3nr0hVkNfFo6wsBoe7uEShnLHYfjrI0fo4RGdZekhz8TbcVmwwO3g3~lDkyK52lgBLoZAA9RoUeequ_FjU3gKS6CCtfqqvuE4_FWAeDj1ONBLHACh2NQ_2cIObx4Mg93649hYH~7fTp7D.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyLldGJNWbBpjYOSeBQfJ9Yt4b~Njdhi6D6z3d0UEreSOhiq1E81RtydHSaGFe2FVvemKJxErZ1mUy4KGlz6vX0OGXlhV~tWxNro1kPpy0p3Q~qwXlpNVP3m_bqtPEBWImJJKnxYhHjU_q14jwwXIzjjFI83rU6NsQCiWXbRI4WMMaN5gKfebPTHsjL3ctE3AGaNAYDdVTQsWcIkvJEbj8i8E4ueWT0Akafy14SSpmts.jpg"
     ]
   },
 "agent": {
@@ -391,11 +424,13 @@
 
 {
   "id": 14,
+  "readyToSell": false,
+
   "type": "house",
   "house": {
     "type": "hot",
     "name": "Charming cottage in Napa Valley",
-    "price": "$1,200,000",
+    "price": "$600,000",
     "rating": 4.6,
     "description": {
       "text": "This charming cottage is located in the heart of Napa Valley and offers picturesque views of the surrounding vineyards. It features a cozy interior with rustic touches, a spacious outdoor patio with a fireplace, and a private wine cellar.",
@@ -406,7 +441,7 @@
       "floor": 1
     },
     "images": [
-      "https://example.com/cottage1.jpg",
+      "https://dolce-house.ru/assets/images/products/63/01.jpeg",
       "https://example.com/cottage2.jpg",
       "https://example.com/cottage3.jpg"
     ]
@@ -422,9 +457,11 @@
 {
     
   "id": 10,
+  "readyToSell": false,
+
   "type": "villa",
   "house": {
-    "type": "modern",
+    "type": "new",
     "name": "Modern hillside villa in Los Angeles",
     "price": "$4,500,000",
     "rating": 4.7,
@@ -437,9 +474,10 @@
       "floor": 3
     },
     "images": [
-      "https://example.com/villa7.jpg",
-      "https://example.com/villa8.jpg",
-      "https://example.com/villa9.jpg"
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZlKaGmai73_TPQz0VTGwwxAQAJ82nB5BEbNNdISfx698kpWxje9bcvXxISoZjjWViypVem44QhVpy_KYa5H~PV5NVH4FE_doqqA95zFNzZh~r5WQ07N7Flq_O~bmMLzyBy2PzitU~ZmrMYloch0bdefsg5BivYvFBAkCbfL9979ixwUN0OveV8evr2Ssbb8N_tLwQrZoJbxYu288AJ_GPFNWdAyZD1AmCkb_ySvomYJJn.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZlKaGmai726reiik~dIgJ737k_BWp9sFOWp82VKIiCXL2vcJMp_K8f7stQbRZmhq4LseUY~DJjVFwoJ9cUA5aF~s0ilM4GMFgUZWpR2b7RB8VVCK8xPBJTPN~zLmQP0IgNd3F09873HiAdNFNlB6aT~wnG8WvawXIT_kxE3CZCjR3ReymeotAvp7f2LCI17YLYzU1lPPpew5qcp8CxNWezcer6eiHz_ss22aSTdPUuVSb.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZlKaGmai72DvFzT06_HRPuIRyx536t3nSJgS0OCEo48CIGU4gRZts7SVWwuBeUE~kFLJdf_Ik~2cW~Wei8Ob644Q~8bVL0pJL6Nlwow3rz8jmz_v1Z63pdoK16Q~fM_2xbXpgouciCjpWYdZtKsBxpnGITCwiZ90iKuMXWbQE1BvV7Syk9AfvW88mCkfQwfh_M9LRdsV3aFh49aktdSBFsEtu0uBNyxY9G8h~QmrbYgKr.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZlKaGmai7i8gFEPfSDbNqO9DzVCjaxDE7EAyc6b9L~KX~XD1iOpJC~3xIUOMtiqTkPvyaXw_73Cm3uZ7lZVgzQnjefVljRBJ1jn3eUDJMMAZmTFTkmq0kc4C6YrbQie~Po8~E_H2Vg7Sua7UA2KWpQ7Wx1UqpetYeRqUx1p3SubQICvvcB6I6gY8Jr1f7~KtG~t8sSrITHg9lgUwHiL5jdLU2az8O~oEQbemJTOvw78Jc.jpg"
     ]
   },
   "agent": {
@@ -452,9 +490,11 @@
 },
 {
   "id": 9,
+
+"readyToSell": false,
   "type": "villa",
   "house": {
-    "type": "luxury",
+    "type": "hot",
     "name": "Luxurious oceanfront villa in the Bahamas",
     "price": "$6,500,000",
     "rating": 4.9,
@@ -467,9 +507,10 @@
       "floor": 2
     },
     "images": [
-      "https://example.com/villa4.jpg",
-      "https://example.com/villa5.jpg",
-      "https://example.com/villa6.jpg"
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyAhPCRSFlVjEOY135nkLHM6sxXWbUe895wG6GXPegbL8fEbPGsosOZarxa5XU8I3L9KnBVQiCSrqRsQtkdd0hy8SEThJBJGgIc5z4qNqYl~kavF9phYFb6sUoridjwzIs8Sr3PQcl9aAgIElAKo0pUBvBGdSqxnuN_R6kRfYbm6YvrUIekYPLQzllyBd9RH_5a_P6TwPSiV7jUU6T86RWm0juvmA28LbElIBX4A7qmd.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyAhPCRSRUZu_5N06GWb7LhuFLjzQ5cNWG2u~z3cF8tfnA49eMN18o3yemaqYUla3RD4Z8yAcVfJDdh_IzW3y_USGhngaXzn4Cg9GesKD84aEeXwC3qPPQmMuHp16sAthGJ9ui3sXP9_0N0gQUOC7nSSCr4MBnirT3aYNkyZSKBHW1tMGzwy~eX7Le9KzSLu9eRjtQ0yRODyGIlfq8KyxkQ0QlVb6R4mvtJ7B~88zhkz.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyAhPCRSFYNRqKn_wJECS1fRuaQr~AMX6oYgPvptBPscAA3wD0jujxnhektMTqdusJJu5Bmh7GvxEf7UgmknyqU3vo4F2l~kwFXsY_i_rvsmgTK69C2yFbIv80fhCmdt0NlPGQnb1JlXdmSo3lswJzlhPI2mHVFJMdRPhJ5Hrw4G_EYDLTGisco_b2rkdBFLf0cBP_a68t_uUS9pE2mgu1KteOgMEO_ZViNqb4pB7itT.jpg",
+      "https://media.inmobalia.com/imgV1/B8vEv5Xh_VThvnEqMx4G0ZxU~~H0Ar_8Bn_AfAx~4dnt796zQ9QIPwzdr9PkzIdRpbOaIUG6rQkTUfRM4VBt~CJs4XmwvxWZkyAhPCRSF0cWId51cbm26xBSHhuwRc5XueXSBNJQuuJBepSv6sEylJ9oK6_ARPjPVbqpuV~MOZaQKhPXL7LvOSNZKtnaAkjPYJmHc9331C1nXZ6PgfcpMnvwFAGL95EOjRmJvGFUGaTPz48YIi29CYCXYrv0yeLODjA_vZhoDc_eHIWl0ZKx_njLJ5OBLzITk3nlKTd4lCvcsegjEUyuNxdPPeEkw_wFFcOevMvqCKHR.jpg"
     ]
   },
   "agent": {

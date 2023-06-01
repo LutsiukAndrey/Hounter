@@ -4,7 +4,8 @@ import classNames from 'classnames';
 import { ReviewsItem } from './ReviewsItem/ReviewsItem';
 import Slider from 'react-slick';
 import { reviewsSliderSettings } from 'js/helpers';
-export const Reviews = () => {
+import { nanoid } from 'nanoid';
+export const Reviews = ({ data }) => {
   return (
     <section className={s.review} id="aboutUs">
       <Container>
@@ -17,12 +18,9 @@ export const Reviews = () => {
 
         <ul className={s.reviewList}>
           <Slider {...reviewsSliderSettings} className={s.slider}>
-            <ReviewsItem />
-            <ReviewsItem />
-            <ReviewsItem />
-            <ReviewsItem />
-            <ReviewsItem />
-            <ReviewsItem />
+            {data.map(house => {
+              return <ReviewsItem key={nanoid()} data={house} />;
+            })}
           </Slider>
         </ul>
 

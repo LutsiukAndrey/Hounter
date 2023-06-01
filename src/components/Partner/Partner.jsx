@@ -27,7 +27,7 @@ export const Partner = () => {
               Find out more about selling and buying homes
             </h2>
             <button className={s.partner__btn} type="button">
-              More Artikel
+              More Artikels
             </button>
           </div>
 
