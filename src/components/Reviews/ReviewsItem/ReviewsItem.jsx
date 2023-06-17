@@ -1,5 +1,4 @@
 import s from './ReviewsItem.module.scss';
-// import house from '../../../img/review3.png';
 import StarIcon from '@mui/icons-material/Star';
 
 export const ReviewsItem = ({ data }) => {

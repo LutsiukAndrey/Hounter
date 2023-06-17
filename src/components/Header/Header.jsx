@@ -11,7 +11,7 @@ export const Header = () => {
     <header className={s.header}>
       <Container>
         <div className={s.header_wraper}>
-          <a href="#" className={s.header__link}>
+          <a href="/" className={s.header__link}>
             <HandySvg src={logo} className={s.header__logo} />
             Hounter
           </a>
@@ -29,7 +29,7 @@ export const Header = () => {
                 </a>
               </li>
               <li className={classNames(s.width__submenu, s.header_list__item)}>
-                <a className={s.header_list__link} href="#">
+                <a className={s.header_list__link} href="/">
                   Property
                   <svg className={s.header_list__svg}></svg>
                 </a>

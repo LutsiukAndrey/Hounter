@@ -5,17 +5,17 @@ export const Property = () => {
       <p className={s.property__text}>Property</p>
       <ul className={s.propertyList}>
         <li className={s.propertyList__item}>
-          <a className={s.propertyList__link} href="#">
+          <a className={s.propertyList__link} href="/">
             House
           </a>
         </li>
         <li className={s.propertyList__item}>
-          <a className={s.propertyList__link} href="#">
+          <a className={s.propertyList__link} href="/">
             Apartment
           </a>
         </li>
         <li className={s.propertyList__item}>
-          <a className={s.propertyList__link} href="#">
+          <a className={s.propertyList__link} href="/">
             Villa
           </a>
         </li>

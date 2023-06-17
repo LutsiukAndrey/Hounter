@@ -141,7 +141,7 @@ export const ReadyToSell = ({ data }) => {
               alt="img"
             />
 
-            {/* <a className={s.sellRightblock__link} href="#">
+            {/* <a className={s.sellRightblock__link} href="/">
               <svg className={s.sellRightblock__svg} width="20" height="20">
                 <use href="./img/sprite/sprite.svg#icon-sell-play"></use>
               </svg>

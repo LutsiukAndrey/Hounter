@@ -24,7 +24,7 @@ export const Footer = () => {
             alt="png"
           />
           <div className={s.footerLeftblock}>
-            <a href="#" className={s.footerLeftblock__link}>
+            <a href="/" className={s.footerLeftblock__link}>
               <HandySvg
                 height="32px"
                 width="32px"
@@ -41,7 +41,7 @@ export const Footer = () => {
 
             <ul className={s.footerLeftblock__list}>
               <li className={s.footerLeftblock__item}>
-                <a className={s.footerLeftblock__socialLink} href="#">
+                <a className={s.footerLeftblock__socialLink} href="/">
                   <FacebookIcon
                     className={s.footerLeftblock__svg}
                     width="32"
@@ -50,7 +50,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li className={s.footerLeftblock__item}>
-                <a className={s.footerLeftblock__socialLink} href="#">
+                <a className={s.footerLeftblock__socialLink} href="/">
                   <TwitterIcon
                     className={s.footerLeftblock__svg}
                     width="32"
@@ -59,7 +59,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li className={s.footerLeftblock__item}>
-                <a className={s.footerLeftblock__socialLink} href="#">
+                <a className={s.footerLeftblock__socialLink} href="/">
                   <InstagramIcon
                     className={s.footerLeftblock__svg}
                     width="32"

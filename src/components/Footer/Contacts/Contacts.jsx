@@ -5,7 +5,7 @@ export const Contacts = () => {
       <p className={s.contacts__text}>Contact</p>
       <ul className={s.contactsList}>
         <li className={s.contactsList__item}>
-          <a className={s.contactsList__link} href="#">
+          <a className={s.contactsList__link} href="/">
             2464 Royal Ln. Mesa, New Jersey 45463
           </a>
         </li>
