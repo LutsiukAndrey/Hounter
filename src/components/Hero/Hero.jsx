@@ -7,7 +7,6 @@ import airbnb from '../../img/partner3.svg';
 import tripAbvisor from '../../img/partner4.svg';
 import heroImg from '../../img/hero.png';
 import heroLine from '../../img/lines.png';
-import firstPortret from '../../img/portret1.png';
 import secondPortret from '../../img/portret2.png';
 import thirdPortret from '../../img/portret3.png';
 import forthPortret from '../../img/portret4.png';
