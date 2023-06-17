@@ -1,4 +1,3 @@
-import { Container } from 'components/Container/Container';
 import { Header } from './components/Header/Header';
 import { Hero } from 'components/Hero/Hero';
 import { Recomendation } from 'components/Recomendation/Recomendation';
@@ -7,7 +6,6 @@ import { Reviews } from 'components/Reviews/Reviews';
 import { Partner } from 'components/Partner/Partner';
 import { Subscribe } from 'components/Subscribe/Subscribe';
 import { Footer } from 'components/Footer/Footer';
-import { PreviousNextMethods } from 'components/Test';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { baseUrl } from 'js/API';
@@ -15,7 +13,6 @@ import { baseUrl } from 'js/API';
 export const App = () => {
   const [housesArr, setHousesArr] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [filtredHouses, setFiltredHouses] = useState([]);
   const [isReadyToSellArr, setIsReadyToSellArr] = useState([]);
 
   useEffect(() => {
