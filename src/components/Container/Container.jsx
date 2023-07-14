@@ -1,4 +1,4 @@
-import s from './Container.module.scss';
+import './Container.scss';
 export const Container = ({ children }) => {
-  return <div className={s.container}>{children}</div>;
+  return <div className="container">{children}</div>;
 };

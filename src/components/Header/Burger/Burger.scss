@@ -1,0 +1,51 @@
+@import '../../../scss/variables';
+
+.burger {
+  & > div {
+    min-width: 100%;
+
+    border-radius: 32px;
+  }
+
+  // &:hover,
+  // &:focus {
+  //   // transition: transform 300ms linear;
+  //   border-radius: 32px;
+  // }
+  &_collapse {
+    position: absolute;
+    right: 0;
+
+    &_btn {
+      &.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+        border-radius: 32px;
+
+        transform: scale(1);
+        transition: transform 300ms linear;
+
+        // &:hover,
+        // &:focus {
+        //   transform: scale(1.1);
+
+        //   color: $accent;
+        // }
+      }
+    }
+    &_singup {
+      &.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+        border-radius: 32px;
+        border: transparent;
+
+        transform: scale(1);
+        transition: transform 300ms linear;
+        background-color: $accent-light;
+        color: $accent;
+
+        // &:hover,
+        // &:focus {
+        //   transform: scale(1.1);
+        // }
+      }
+    }
+  }
+}

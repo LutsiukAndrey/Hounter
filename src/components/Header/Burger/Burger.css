@@ -1,0 +1,21 @@
+.burger > div {
+  min-width: 100%;
+  border-radius: 32px;
+}
+.burger_collapse {
+  position: absolute;
+  right: 0;
+}
+.burger_collapse_btn.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+  border-radius: 32px;
+  transform: scale(1);
+  transition: transform 300ms linear;
+}
+.burger_collapse_singup.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+  border-radius: 32px;
+  border: transparent;
+  transform: scale(1);
+  transition: transform 300ms linear;
+  background-color: #d1fae5;
+  color: #047857;
+}/*# sourceMappingURL=Burger.css.map */

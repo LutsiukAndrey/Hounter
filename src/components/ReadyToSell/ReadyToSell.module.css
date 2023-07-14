@@ -161,6 +161,7 @@
 .sellLeftblockDown__img {
   width: 56px;
   margin-right: 24px;
+  border-radius: 50%;
 }
 .sellLeftblockDown__title {
   font-style: normal;

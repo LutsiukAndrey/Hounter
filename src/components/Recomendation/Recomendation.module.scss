@@ -1,6 +1,8 @@
 @import '../../scss/variables';
 
 .recommendation {
+  padding-top: 170px;
+
   @media ($mobile) {
     padding-top: 60px;
   }
@@ -63,12 +65,10 @@
   display: flex;
 
   @media ($tablet) {
-    flex-direction: column;
     gap: 20px;
   }
 
   @media ($mobile) {
-    flex-direction: column;
     gap: 20px;
   }
 }

@@ -41,49 +41,45 @@ export const Recomendation = ({ data }) => {
   //
   return (
     <section className={s.recommendation}>
-      <Container>
-        <p className={s.recommendation__text}>Our Recommendation</p>
+      <p className={s.recommendation__text}>Our Recommendation</p>
 
-        <div className={s.recommendation__flex}>
-          <h2 className={s.recommendation__title}>Featured House</h2>
+      <div className={s.recommendation__flex}>
+        <h2 className={s.recommendation__title}>Featured House</h2>
 
-          <div className={s.recommendationBtns}>
-            <RecomendationFilter filtered={setfilteredValue} />
-            <ul className={s.recommendationListBtn}>
-              <li className={s.recommendationListBtn__item}>
-                <button
-                  className={s.recommendationListBtn__btn}
-                  onClick={previous}
-                >
-                  <ArrowBackIosIcon className={s.recommendationListBtn__svg} />
-                </button>
-              </li>
-              <li className={s.recommendationListBtn__item}>
-                <button
-                  className={s.recommendationListBtn__btn}
-                  type="button"
-                  onClick={next}
-                >
-                  <ArrowForwardIosIcon
-                    className={s.recommendationListBtn__svg}
-                  />
-                </button>
-              </li>
-            </ul>
-          </div>
+        <div className={s.recommendationBtns}>
+          <RecomendationFilter filtered={setfilteredValue} />
+          <ul className={s.recommendationListBtn}>
+            <li className={s.recommendationListBtn__item}>
+              <button
+                className={s.recommendationListBtn__btn}
+                onClick={previous}
+              >
+                <ArrowBackIosIcon className={s.recommendationListBtn__svg} />
+              </button>
+            </li>
+            <li className={s.recommendationListBtn__item}>
+              <button
+                className={s.recommendationListBtn__btn}
+                type="button"
+                onClick={next}
+              >
+                <ArrowForwardIosIcon className={s.recommendationListBtn__svg} />
+              </button>
+            </li>
+          </ul>
         </div>
-        <div style={{ overflow: 'hidden' }}>
-          <Slider
-            ref={c => (slider = c)}
-            {...sliderSettings}
-            className={s.recommendationList}
-          >
-            {filteredHouse.map(house => {
-              return <RecomendationCard data={house} key={nanoid()} />;
-            })}
-          </Slider>
-        </div>
-      </Container>
+      </div>
+      <div style={{ overflow: 'hidden' }}>
+        <Slider
+          ref={c => (slider = c)}
+          {...sliderSettings}
+          className={s.recommendationList}
+        >
+          {filteredHouse.map(house => {
+            return <RecomendationCard data={house} key={nanoid()} />;
+          })}
+        </Slider>
+      </div>
     </section>
   );
 };

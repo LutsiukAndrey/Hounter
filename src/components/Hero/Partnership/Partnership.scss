@@ -1,0 +1,22 @@
+@import '../../../scss/variables';
+
+.partner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__link {
+    display: inline-flex;
+    transform: scale(1);
+    transition: transform 300ms linear;
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+  &__img {
+    width: 82.75px;
+    height: 64px;
+  }
+}

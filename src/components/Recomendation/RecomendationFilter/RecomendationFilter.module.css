@@ -17,7 +17,7 @@
   }
 }
 .recommendationBtnsList__item:not(:last-child) {
-  margin-right: 56px;
+  margin-right: 10px;
 }
 @media (max-width: 767px) {
   .recommendationBtnsList__item:not(:last-child) {

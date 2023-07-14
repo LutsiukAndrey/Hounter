@@ -9,6 +9,7 @@ import { Footer } from 'components/Footer/Footer';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { baseUrl } from 'js/API';
+import { Container } from 'components/Container/Container';
 
 export const App = () => {
   const [housesArr, setHousesArr] = useState([]);
@@ -27,15 +28,17 @@ export const App = () => {
 
   return (
     <>
-      <Header />
-      <Hero />
+      <Container>
+        <Header />
+        <Hero />
 
-      {isLoading ? <></> : <Recomendation data={housesArr} />}
-      {isLoading ? <></> : <ReadyToSell data={isReadyToSellArr} />}
-      {isLoading ? <></> : <Reviews data={housesArr} />}
-      <Partner />
-      <Subscribe />
-      <Footer />
+        {isLoading ? <></> : <Recomendation data={housesArr} />}
+        {isLoading ? <></> : <ReadyToSell data={isReadyToSellArr} />}
+        {isLoading ? <></> : <Reviews data={housesArr} />}
+        <Partner />
+        <Subscribe />
+        <Footer />
+      </Container>
     </>
   );
 };
